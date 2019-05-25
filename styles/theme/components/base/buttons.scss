@@ -8,8 +8,8 @@
   @include color--white;
   @include font__size--ms;
   @include font__weight--medium;
-  @include padding__x--ms;
-  @include padding__y--sm;
+  @include padding__x--sm;
+  @include padding__y--xs;
   @include margin__x--auto;
   @include border__radius--xxs;
   @include transition__ease-out--slow;

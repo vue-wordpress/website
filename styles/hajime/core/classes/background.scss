@@ -24,6 +24,10 @@
       @include background__color--light-gray;
     }
 
+    &--extra-light-gray {
+      @include background__color--extra-light-gray;
+    }
+
     &--dark-gray {
       @include background__color--dark-gray;
     }

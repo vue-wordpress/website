@@ -4,6 +4,14 @@
 
 .page {
 
+  p {
+    line-height: 1.33349;
+    
+    &.has-normal-font-size {
+      font-size: 22px;
+    }
+  }
+
   &--no-heading {
 
     .page__heading {
@@ -62,11 +70,20 @@
               @include boxed;
             }
             &-image {
-
+              @include flex;
               figure {
                 @include flex;
+                @include width--100;
                 &.aligncenter {
                   @include justify__content--center;
+                  img {
+                  }
+                }
+              }
+              &.alignwide {
+                @include justify__content--center;
+                img {
+                  @include object-fit--contain;
                 }
               }
             }
@@ -92,7 +109,13 @@
             }
 
             &-columns {
-              @include wp-block-boxed;
+              &.alignwide {
+                @include wp-block-boxed;
+              }
+              &.alignfull {
+                @include width--100;
+                @include max-width--100vw;
+              }
               &.has {
                 &-2-columns {
                   @include grid__layout--2-col;
@@ -148,12 +171,12 @@
               }
 
               &__inner-container {
-                @include width--100;
-                @include height--100;
-                @include padding--sm;
+                // @include width--100;
+                // @include height--100;
+                // @include padding--sm;
                 @include flex;
                 @include flex__direction--column;
-                @include align__items--center;
+                // @include align__items--center;
                 @include place__content--center;
 
                 > * {

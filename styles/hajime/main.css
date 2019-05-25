@@ -161,6 +161,9 @@ input[type=number]::-webkit-outer-spin-button {
 .background__color--light-gray {
   background-color: #767676;
 }
+.background__color--extra-light-gray {
+  background-color: #fafafa;
+}
 .background__color--dark-gray {
   background-color: #111;
 }
