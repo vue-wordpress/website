@@ -72,5 +72,11 @@ export default {
     */
     extend(config, ctx) {
     }
+  },
+  generate: {
+    routes: [
+      '/page/test',
+      '/page/apple'
+    ]
   }
 }
