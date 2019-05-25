@@ -1,0 +1,60 @@
+@mixin font__size--xs {
+  font-size: $font-size-xs;
+}
+@mixin font__size--sm {
+  font-size: $font-size-sm;
+}
+@mixin font__size--ms {
+  font-size: $font-size-ms;
+}
+@mixin font__size--md {
+  font-size: $font-size-md;
+}
+@mixin font__size--ml {
+  font-size: $font-size-ml;
+}
+@mixin font__size--lg {
+  font-size: $font-size-lg;
+}
+@mixin font__size--xl {
+  font-size: $font-size-xl;
+}
+@mixin font__size--xxl {
+  font-size: $font-size-xxl;
+}
+
+@mixin font__weight--thin {
+  font-weight: $font-weight-thin;  
+}
+
+@mixin font__weight--extralight {
+  font-weight: $font-weight-extralight;
+}
+
+@mixin font__weight--light {
+  font-weight: $font-weight-light;
+}
+
+@mixin font__weight--normal {
+  font-weight: $font-weight-normal;
+}
+
+@mixin font__weight--medium {
+  font-weight: $font-weight-medium;
+}
+
+@mixin font__weight--semibold {
+  font-weight: $font-weight-semibold;
+}
+
+@mixin font__weight--bold {
+  font-weight: $font-weight-bold;
+}
+
+@mixin font__weight--extrabold {
+  font-weight: $font-weight-extrabold;
+}
+
+@mixin font__weight--black {
+  font-weight: $font-weight-black;
+}

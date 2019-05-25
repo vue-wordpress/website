@@ -1,0 +1,16 @@
+@import '../variables/variables.scss';
+
+.opacity {
+
+  &--sm {
+    opacity: $opacity-sm;
+  }
+
+  &--md {
+    opacity: $opacity-md;
+  }
+
+  &--lg {
+    opacity: $opacity-lg;
+  }
+}

@@ -1,0 +1,20 @@
+@import '~/styles/hajime/main.scss';
+
+@mixin btn {
+  background-color: #41b782;
+  // @include padding__x--md;
+  @include padding__y--sm;
+  @include font__weight--medium;
+  @include font__size--ms;
+  @include border__radius--xxs;
+  @include transition__ease-out--slow;
+  @include hover__opacity--md;
+
+  > a {
+    @include color--light;
+    @include padding__x--md;
+    @include padding__y--sm;
+    @include width--100;
+    @include height--100;
+  }
+}

@@ -1,27 +1,21 @@
 <template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        vue-wordpress-website
+  <div
+    class="home"
+  >
+    <section class="home__hero">
+      <logo/>
+      <h1 class="home__hero__heading">
+        Vue Wordpress
       </h1>
-      <h2 class="subtitle">
-        Nuxt.js app for Vue Wordpress website
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
+      <div class="home__hero__actions">
+        <button>
+          <a href="https://docs.vuewordpress.io">
+            Go to Documentation
+          </a>
+        </button>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -34,35 +28,32 @@ export default {
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style lang="scss">
+
+@import '~/styles/hajime/core/mixins/mixins.scss';
+@import '~/styles/theme/main.scss';
+
+.home {
+
+  &__hero {
+    @include height--100vh;
+    @include grid;
+    @include place__content--center;
+
+    &__heading {
+      @include text__align--center;
+      @include margin__top--lg;
+      @include font__size--xxl;
+    }
+    
+    &__actions {
+      @include margin__top--lg;
+      @include text__align--center;
+      button {
+        @include btn;
+      }
+    }
+  }
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>

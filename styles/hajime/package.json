@@ -1,0 +1,31 @@
+{
+  "name": "hajime",
+  "version": "1.0.1",
+  "description": "始 - Minimalist, universal and scalable SASS/CSS framework for rapid UI development 🛠",
+  "main": "main.scss",
+  "scripts": {
+    "test": "sass main.scss main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/new-fantastic/hajime.git"
+  },
+  "keywords": [
+    "hajime",
+    "css",
+    "sass",
+    "scss",
+    "ui",
+    "styling",
+    "stylesheet",
+    "molecular",
+    "atomic",
+    "semantic"
+  ],
+  "author": "Aleksander Grygier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/new-fantastic/hajime/issues"
+  },
+  "homepage": "https://github.com/new-fantastic/hajime#readme"
+}

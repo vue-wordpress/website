@@ -1,0 +1,20 @@
+@import 'opacity.scss';
+
+@mixin hover__opacity--sm {
+  &:hover {
+    @include opacity--sm;
+  }
+}
+
+@mixin hover__opacity--md {
+  &:hover {
+    @include opacity--md;
+  }
+}
+
+@mixin hover__opacity--lg {
+  &:hover {
+    @include opacity--lg;
+  }
+}
+

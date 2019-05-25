@@ -1,0 +1,32 @@
+@mixin text__align--left {
+  text-align: left;
+}
+
+@mixin text__align--center {
+  text-align: center;
+}
+
+@mixin text__align--right {
+  text-align: right;
+}
+
+@mixin text__color--light {
+  color: $color-light;
+}
+
+@mixin text__color--dark {
+  color: $color-dark;
+}
+
+@mixin text__transform--uppercase {
+  text-transform: uppercase;
+}
+
+@mixin text__transform--lowercase {
+  text-transform: lowercase;
+}
+
+@mixin text__transform--capitalize {
+  text-transform: capitalize;
+}
+

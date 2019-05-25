@@ -1,0 +1,32 @@
+@import '../mixins/grid.scss';
+
+.grid {
+
+  & {
+    @include grid__layout;
+  }
+
+  &--desktop {
+    @media all and (min-width: 981px) {
+      @include grid__layout;
+    }
+  }
+
+  &--mobile {
+    @media all and (max-width: 980px) {
+      @include grid__layout;
+    }
+  }
+
+  &--tablet {
+    @media (min-width: 768px) and (max-width: 980px) {
+      @include grid__layout;
+    }
+  }
+
+  &--phone {
+    @media all and (max-width: 767px) {
+      @include grid__layout;
+    }
+  }
+}

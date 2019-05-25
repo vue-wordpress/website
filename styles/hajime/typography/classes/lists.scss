@@ -1,0 +1,9 @@
+@import '../../core/variables/variables.scss';
+
+ul,
+ol {
+
+  li {
+    line-height: $line-height-lg;
+  }
+}

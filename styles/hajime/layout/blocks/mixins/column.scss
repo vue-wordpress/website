@@ -1,0 +1,35 @@
+@mixin column__min-height--tablet {
+  &__mobile--sm {
+    min-height: 30vh;
+  }
+  &__mobile--md {
+    min-height: 60vh;
+  }
+  &__mobile--lg {
+    min-height: 100vh;
+  }
+  &__mobile--50vh {
+    min-height: 50vh
+  }
+  &__mobile--100vh {
+    min-height: 100vh;
+  }
+}
+
+@mixin column__min-height--phone {
+  &__mobile--sm {
+    min-height: 45vw;
+  }
+  &__mobile--md {
+    min-height: 90vw;
+  }
+  &__mobile--lg {
+    min-height: 120vw;
+  }
+  &__mobile--xl {
+    min-height: 150vw;
+  }
+  &__mobile--100vh {
+    min-height: 100vh;
+  }
+}

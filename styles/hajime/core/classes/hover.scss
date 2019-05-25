@@ -1,0 +1,19 @@
+@import '../mixins/hover.scss';
+
+.hover {
+  
+  &__opacity {
+
+    &--sm {
+      @include hover__opacity--sm;
+    }
+
+    &--md {
+      @include hover__opacity--md;
+    }
+
+    &--lg {
+      @include hover__opacity--lg;
+    }
+  }
+}

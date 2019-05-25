@@ -16,6 +16,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      // { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/new-fantastic/hajime/main.min.css' }
     ]
   },
 
@@ -28,6 +29,8 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/styles/hajime/main.scss',
+    '@/styles/theme/main.scss'
   ],
 
   /*
@@ -44,13 +47,24 @@ export default {
       '@nuxtjs/google-analytics', {
         id: 'UA-140780613-2'
       }
-    ]
+    ],
+    ['nuxt-wp-json', {
+      config: {
+        url: 'http://wp.vuewordpress.io/',
+        lang: 'en',
+        pages: {
+          index: "home"
+        },
+        menus: false
+      }
+    }]
   ],
 
   /*
   ** Build configuration
   */
   build: {
+    transpile: ['vue-wp-json'],
     /*
     ** You can extend webpack config here
     */

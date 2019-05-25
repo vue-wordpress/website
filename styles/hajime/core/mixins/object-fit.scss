@@ -1,0 +1,7 @@
+@mixin object-fit--cover {
+  object-fit: cover;
+}
+
+@mixin object-fit--contain {
+  object-fit: contain;
+}
