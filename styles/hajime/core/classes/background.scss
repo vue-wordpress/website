@@ -4,12 +4,28 @@
 
   &__color {
 
-    &--dark {
-      @include background__color--dark;
+    &--black {
+      @include background__color--black;
     }
 
-    &--light {
-      @include background__color--light;
+    &--white {
+      @include background__color--white;
+    }
+
+    &--primary {
+      @include background__color--primary;
+    }
+
+    &--secondary {
+      @include background__color--secondary;
+    }
+
+    &--light-gray {
+      @include background__color--light-gray;
+    }
+
+    &--dark-gray {
+      @include background__color--dark-gray;
     }
   }
 

@@ -57,3 +57,11 @@
 @mixin flex__basis--12-col {
   flex-basis:  calc(8.3333% - 6 * #{$gap-sm} / 12);
 }
+
+@mixin flex__direction--column {
+  flex-direction: column;
+}
+
+@mixin flex__direction--column-reverse {
+  flex-direction: column-reverse;
+}

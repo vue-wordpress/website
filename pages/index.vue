@@ -8,20 +8,29 @@
         Vue Wordpress
       </h1>
       <div class="home__hero__actions">
-        <button>
+        <button
+        >
           <a href="https://docs.vuewordpress.io">
             Go to Documentation
           </a>
         </button>
       </div>
     </section>
+    <Sections
+      v-if="wpData"
+      :data="wpData"
+    />
   </div>
 </template>
 
 <script>
+
 import Logo from '~/components/Logo.vue'
+import loadSections from 'vue-wp-json/mixins/loadSections'
+import { FetchHookTypes } from 'vue-wp-json/types'
 
 export default {
+  mixins: [loadSections(FetchHookTypes.Created)],
   components: {
     Logo
   }
@@ -42,7 +51,7 @@ export default {
 
     &__heading {
       @include text__align--center;
-      @include margin__top--lg;
+      @include margin__top--ml;
       @include font__size--xxl;
     }
     
@@ -50,7 +59,10 @@ export default {
       @include margin__top--lg;
       @include text__align--center;
       button {
-        @include btn;
+        a {
+          @include btn;
+          background-color: #39ae77 !important;
+        }
       }
     }
   }

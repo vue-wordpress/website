@@ -1,26 +1,26 @@
 @import '../../core/variables/variables.scss';
 
 .h1 {
-  font-size: $font-size-lg;
+  font-size: $font-size-xl;
   // margin-top: $gap-ms;
 }
 
 .h2 {
-  font-size: $font-size-ml;
+  font-size: $font-size-lg;
   // margin-top: $gap-ms;
 }
 
 .h3 {
-  font-size: $font-size-md;
+  font-size: $font-size-ml;
   // margin-top: $gap-ms;
 }
 
 .h4 {
-  font-size: $font-size-ms;
+  font-size: $font-size-md;
   // margin-top: $gap-ms;
 }
 
 .h5 {
-  font-size: $font-size-sm;
+  font-size: $font-size-ms;
   // margin-top: $gap-ms;
 }

@@ -1,23 +1,7 @@
 @import '../mixins/mixins.scss';
 
 .container {
-  box-sizing: border-box;
-  @include width--100;
-
-  &__inner {
-    @include height--100;
-    @include width--100;
-    @include margin--auto;
-    
-    &--boxed {
-      width: calc(100% - #{$gap-lg});
-      @include margin--auto;
-      @include max-width--boxed;
-      @media all and (max-width: 767px) {
-        width: calc(100% - #{$gap-sm});
-      }
-    }
-  }
+  @include container;
 }
 
 .grid__1-col {

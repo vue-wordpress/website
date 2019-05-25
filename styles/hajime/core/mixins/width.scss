@@ -38,6 +38,10 @@
   width: $width-100;
 }
 
+@mixin width--100--important {
+  width: $width-100 !important;
+}
+
 @mixin width--50vw {
   width: $width-50vw;
 }

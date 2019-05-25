@@ -1,0 +1,175 @@
+@import '~/styles/hajime/core/mixins/mixins.scss';
+@import '~/styles/hajime/layout/base/mixins/grid.scss';
+@import '~/styles/theme/components/base/buttons.scss';
+
+.page {
+
+  &--no-heading {
+
+    .page__heading {
+      display: none;
+    }
+  }
+
+  &__heading {
+    @include text__align--center;
+    display: none;
+  }
+
+  .section {
+
+    .column {
+
+      > div {
+        @include width--100;
+
+        .content {
+
+          .alignwide {
+            @include width--100;
+          }
+
+          .alignfull {
+            @include width--100;
+            @include max-width--100vw;
+          }
+
+          .has-background {
+            &.has-primary-background-color {
+              @include background__color--primary;
+            }
+
+            &.has-secondary-background-color {
+              @include background__color--secondary;
+            }
+
+            &.has-dark-gray-background-color {
+              @include background__color--dark-gray;
+            }
+
+            &.has-light-gray-background-color {
+              @include background__color--light-gray;
+            }
+
+            &.has-white-background-color {
+              @include background__color--white;
+            }
+          }
+
+          .wp-block {
+            @mixin wp-block-boxed {
+              @include container;
+              @include boxed;
+            }
+            &-image {
+
+              figure {
+                @include flex;
+                &.aligncenter {
+                  @include justify__content--center;
+                }
+              }
+            }
+
+            &-button {
+              // @include wp-block-boxed;
+              @include flex;
+              a {
+                @include btn;
+                width: auto;
+              }
+              &.aligncenter {
+                @include justify__content--center;
+                @include text__align--center;
+                a {
+                  @include justify__self--center;
+                }
+              }
+
+              &__link {
+                width: auto;
+              }
+            }
+
+            &-columns {
+              @include wp-block-boxed;
+              &.has {
+                &-2-columns {
+                  @include grid__layout--2-col;
+                }
+                &-3-columns {
+                  @include grid__layout--3-col;
+                }
+                &-4-columns {
+                  @include grid__layout--4-col;
+                }
+                &-5-columns {
+                  @include grid__layout--5-col;
+                }
+                &-6-columns {
+                  @include grid__layout--6-col;
+                }
+                &-7-columns {
+                  @include grid__layout--7-col;
+                }
+                &-8-columns {
+                  @include grid__layout--8-col;
+                }
+                &-9-columns {
+                  @include grid__layout--9-col;
+                }
+                &-10-columns {
+                  @include grid__layout--10-col;
+                }
+                &-11-columns {
+                  @include grid__layout--11-col;
+                }
+                &-12-columns {
+                  @include grid__layout--12-col;
+                }
+              }
+
+              .wp-block-column {
+
+                > div {
+                  &.alignwide {
+                    @include width--100--important;
+                  }
+                }
+              }
+            }
+
+            &-cover {
+              @include height--lg;
+              @include background__repeat--no-repeat;
+              @include background__size--cover;
+              &.alignwide {
+                @include wp-block-boxed;
+              }
+
+              &__inner-container {
+                @include width--100;
+                @include height--100;
+                @include padding--sm;
+                @include flex;
+                @include flex__direction--column;
+                @include align__items--center;
+                @include place__content--center;
+
+                > * {
+                  @include text__color--light;
+                  @include width--100;
+                  display: initial;
+                }
+
+                > p {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

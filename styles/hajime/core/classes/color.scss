@@ -2,11 +2,27 @@
 
 .color {
 
-  &--dark {
-    @include color--dark;
+  &--black {
+    @include color--black;
   }
 
-  &--light {
-  @include color--light;    
+  &--white {
+  @include color--white;    
+  }
+
+  &--primary {
+    @include color--primary;
+  }
+
+  &--secondary {
+    @include color--secondary;
+  }
+
+  &--light-gray {
+    @include color--light-gray;
+  }
+
+  &--dark-gray {
+    @include color--dark-gray;
   }
 }

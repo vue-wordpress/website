@@ -11,11 +11,11 @@
 }
 
 @mixin text__color--light {
-  color: $color-light;
+  color: $color-white;
 }
 
 @mixin text__color--dark {
-  color: $color-dark;
+  color: $color-black;
 }
 
 @mixin text__transform--uppercase {

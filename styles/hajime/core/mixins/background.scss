@@ -1,11 +1,27 @@
 @import '../variables/variables.scss';
 
-@mixin background__color--dark {
-  background-color: $color-dark;
+@mixin background__color--black {
+  background-color: $color-black;
 }
 
-@mixin background__color--light {
-  background-color: $color-light;
+@mixin background__color--white {
+  background-color: $color-white;
+}
+
+@mixin background__color--dark-gray {
+  background-color: $color-dark-gray;
+}
+
+@mixin background__color--light-gray {
+  background-color: $color-light-gray;
+}
+
+@mixin background__color--primary {
+  background-color: $color-primary;
+}
+
+@mixin background__color--secondary {
+  background-color: $color-secondary;
 }
 
 @mixin background__position__x--left {
@@ -42,4 +58,8 @@
 
 @mixin background__size--100 {
   background-size: 100%;
+}
+
+@mixin background__repeat--no-repeat {
+  background-repeat: no-repeat;
 }
