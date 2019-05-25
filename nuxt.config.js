@@ -7,15 +7,15 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'Vue WordPress',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description },
+      { hid: 'description', name: 'description', content: 'Front-End PWA solution for WordPress based on Vue.js' },
       { name: 'google-site-verification', content: 'AY-a4ORJi1hIBLAWe1W2-K2kjr0b8-PMXHRjKlDIeGg' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/vuejs-logo.png' }
       // { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/new-fantastic/hajime/main.min.css' }
     ]
   },
@@ -53,10 +53,12 @@ export default {
         url: 'http://wp.vuewordpress.io/',
         lang: 'en',
         pages: {
-          index: "home"
+          index: 'start'
         },
-        menus: false
-      }
+        menus: false,
+      },
+      router: 'manual',
+      store: 'manual'
     }]
   ],
 
