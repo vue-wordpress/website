@@ -69,44 +69,6 @@
               @include container;
               @include boxed;
             }
-            &-image {
-              @include flex;
-              figure {
-                @include flex;
-                @include width--100;
-                &.aligncenter {
-                  @include justify__content--center;
-                  img {
-                  }
-                }
-              }
-              &.alignwide {
-                @include justify__content--center;
-                img {
-                  @include object-fit--contain;
-                }
-              }
-            }
-
-            &-button {
-              // @include wp-block-boxed;
-              @include flex;
-              a {
-                @include btn;
-                width: auto;
-              }
-              &.aligncenter {
-                @include justify__content--center;
-                @include text__align--center;
-                a {
-                  @include justify__self--center;
-                }
-              }
-
-              &__link {
-                width: auto;
-              }
-            }
 
             &-columns {
               &.alignwide {
@@ -162,10 +124,52 @@
               }
             }
 
+            &-image {
+              @include flex;
+              figure {
+                @include flex;
+                @include width--100;
+                &.aligncenter {
+                  @include justify__content--center;
+                }
+              }
+              &.alignwide {
+                @include justify__content--center;
+                img {
+                  @include object-fit--contain;
+                }
+              }
+            }
+
+            &-button {
+              // @include wp-block-boxed;
+              @include flex;
+              a {
+                @include btn;
+                width: auto;
+              }
+              &.aligncenter {
+                @include justify__content--center;
+                @include text__align--center;
+                a {
+                  @include justify__self--center;
+                }
+              }
+
+              &__link {
+                width: auto;
+              }
+            }
+
             &-cover {
               @include height--lg;
               @include background__repeat--no-repeat;
               @include background__size--cover;
+              @include grid;
+              @include place__content--center;
+              &.place__content--start--center {
+                @include place__content--start--center;
+              }
               &.alignwide {
                 @include wp-block-boxed;
               }
@@ -176,8 +180,6 @@
                 // @include padding--sm;
                 @include flex;
                 @include flex__direction--column;
-                // @include align__items--center;
-                @include place__content--center;
 
                 > * {
                   @include text__color--light;
