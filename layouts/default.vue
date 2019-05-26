@@ -1,8 +1,8 @@
 <template>
   <div>
-    <!-- <base-menu
-      :slug="'main-menu'"
-    /> -->
+    <base-menu
+      slug="main-menu"
+    />
     <div
       class="height--xxs"
     />
