@@ -48,18 +48,26 @@ export default {
         id: 'UA-140780613-2'
       }
     ],
-    ['nuxt-wp-json', {
-      config: {
-        url: 'http://wp.vuewordpress.io/',
-        lang: 'en',
-        pages: {
-          index: 'start'
+    [
+      'nuxt-wp-json', {
+        config: {
+          url: 'http://wp.vuewordpress.io/',
+          lang: 'en',
+          pages: {
+            index: 'start',
+            apple: 'apple',
+            mac: 'mac',
+            test: 'test'
+          },
+          menus: [
+            'main-menu',
+            'apple-menu'
+          ],
         },
-        menus: false,
-      },
-      router: 'manual',
-      store: 'manual'
-    }]
+        router: 'manual',
+        store: 'manual'
+      }
+    ]
   ],
 
   /*

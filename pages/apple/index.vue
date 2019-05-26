@@ -1,6 +1,6 @@
 <template>
   <div
-    class="home wp-page"
+    class="wp-page apple-home"
   >
     <Sections
       v-if="wpData"
@@ -16,6 +16,7 @@ import loadSections from 'vue-wp-json/mixins/loadSections'
 import { FetchHookTypes } from 'vue-wp-json/types'
 
 export default {
+  // layout: 'apple',
   mixins: [loadSections(FetchHookTypes.AsyncData)],
   components: {
     Logo
