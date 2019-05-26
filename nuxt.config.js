@@ -51,7 +51,7 @@ export default {
     [
       'nuxt-wp-json', {
         config: {
-          url: 'http://wp.vuewordpress.io/',
+          url: 'https://wp.vuewordpress.io/',
           lang: 'en',
           pages: {
             index: 'start',

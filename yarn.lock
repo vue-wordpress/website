@@ -5382,10 +5382,10 @@ gzip-size@^5.0.0:
     duplexer "^0.1.1"
     pify "^4.0.1"
 
-hajime@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/hajime/-/hajime-1.0.3.tgz#c7069bc22c2e23cd1f16ead144dccf9536c7058c"
-  integrity sha512-OSNXKbIQA1GIfS/anYcDFjs6d5RfBXL30Ir7mXczHZLeCP3Kh/VcIOTSRXlfw7Rlhtb0Wznl466SVE/AqOBm0Q==
+hajime@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/hajime/-/hajime-1.0.4.tgz#1fe41cc51ba4d0694f5adb46c8602e03721b2016"
+  integrity sha512-F9s3/4DMeFGpeOQq1hWXkUWFkCFMUtHnRjr+F3J0zfzXcOw8s+ktfLB4FOHUvjyMCy56a4YM75rfKS3uR3ruvA==
 
 har-schema@^2.0.0:
   version "2.0.0"
@@ -7981,9 +7981,9 @@ number-is-nan@^1.0.0:
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
 nuxt-wp-json@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/nuxt-wp-json/-/nuxt-wp-json-1.0.2.tgz#52fe0665075d71dd15b6ed62bba637f94c99b0a8"
-  integrity sha512-3SCcQu7/syT6o5l71zkhTFzXD8Vx4Wl611cv0qxNv51Muo59uToMTa6dk8DWNiSAlzsA68KsZ4566W3qwfyKcg==
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/nuxt-wp-json/-/nuxt-wp-json-1.0.3.tgz#9867e10e5f9730116c415d95523769bc0e39ac87"
+  integrity sha512-TDgcOvK7mLj4KGfbJA2eU1N2oDqSzWqbQ/jamitb9YMOsSx+Et3/zpYJ58z1bg3h/4sFOJTRNdIdA3jkVPB+AQ==
   dependencies:
     vue-wp-json "1.x"
 
