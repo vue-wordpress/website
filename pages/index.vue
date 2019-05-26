@@ -1,21 +1,7 @@
 <template>
   <div
-    class="home page"
+    class="home wp-page"
   >
-    <!-- <section class="home__hero">
-      <logo/>
-      <h1 class="home__hero__heading">
-        Vue Wordpress
-      </h1>
-      <div class="home__hero__actions">
-        <button
-        >
-          <a href="https://docs.vuewordpress.io">
-            Go to Documentation
-          </a>
-        </button>
-      </div>
-    </section> -->
     <Sections
       v-if="wpData"
       :data="wpData"

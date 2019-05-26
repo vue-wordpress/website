@@ -2,7 +2,8 @@
 @import 'hajime/layout/base/mixins/grid.scss';
 @import '~/styles/theme/components/base/buttons.scss';
 
-.wp-page {
+.wp-page,
+.page {
 
   p {
     line-height: 1.33349;
