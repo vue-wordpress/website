@@ -5140,6 +5140,11 @@ gzip-size@^5.0.0:
     duplexer "^0.1.1"
     pify "^4.0.1"
 
+hajime@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/hajime/-/hajime-1.0.2.tgz#43f467a5ff39c41d0bd2b86f4137a19d23cb481b"
+  integrity sha512-ybt+0tWn168itP3GaYzwn67ylhJ+05uB/3oPkz6RyQowqQ97xIvgTViyH3PiS2Pm4cuchBYln5cuJkRinwlIKg==
+
 har-schema@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/har-schema/-/har-schema-2.0.0.tgz#a94c2224ebcac04782a0d9035521f24735b7ec92"

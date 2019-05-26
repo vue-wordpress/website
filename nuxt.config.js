@@ -29,7 +29,7 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/styles/hajime/main.scss',
+    'hajime/main.scss',
     '@/styles/theme/main.scss'
   ],
 

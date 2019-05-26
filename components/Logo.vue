@@ -28,7 +28,7 @@ export default {
 
 <style lang="scss">
 
-@import '~/styles/hajime/core/mixins/mixins.scss';
+@import 'hajime/core/mixins/mixins.scss';
 
 .logo {
   @include width--100;
