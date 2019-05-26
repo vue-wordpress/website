@@ -125,7 +125,7 @@
             }
 
             &-image {
-              @include flex;
+              // @include flex;
               figure {
                 @include flex;
                 @include width--100;
