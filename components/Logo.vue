@@ -31,7 +31,6 @@ export default {
 @import 'hajime/core/mixins/mixins.scss';
 
 .logo {
-  @include width--100;
   @include flex;
   @include justify__content--center;
 

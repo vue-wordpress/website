@@ -1,22 +1,18 @@
 <template>
   <div>
-    <base-menu
-      slug="main-menu"
-    />
-    <div
-      class="height--xxs"
-    />
+    <default-header />
     <nuxt />
   </div>
 </template>
 
 <script>
 
-import BaseMenu from 'vue-wp-json/components/Base/BaseMenu';
+import DefaultHeader from '~/components/UI/Header/DefaultHeader'
 
 export default {
   components: {
-    BaseMenu
+    DefaultHeader
   }
 }
+
 </script>
