@@ -1,21 +1,7 @@
 <template>
   <div
-    class="home page"
+    class="wp-page apple-mac"
   >
-    <!-- <section class="home__hero">
-      <logo/>
-      <h1 class="home__hero__heading">
-        Vue Wordpress
-      </h1>
-      <div class="home__hero__actions">
-        <button
-        >
-          <a href="https://docs.vuewordpress.io">
-            Go to Documentation
-          </a>
-        </button>
-      </div>
-    </section> -->
     <Sections
       v-if="wpData"
       :data="wpData"
@@ -30,6 +16,7 @@ import loadSections from 'vue-wp-json/mixins/loadSections'
 import { FetchHookTypes } from 'vue-wp-json/types'
 
 export default {
+  // layout: 'apple',
   mixins: [loadSections(FetchHookTypes.AsyncData)],
   components: {
     Logo
@@ -41,13 +28,5 @@ export default {
 
 @import 'hajime/main.scss';
 @import '~/styles/theme/main.scss';
-
-.home {
-  // .column {
-  //   > div {
-  //     @include width--100;
-  //   }
-  // }
-}
 
 </style>

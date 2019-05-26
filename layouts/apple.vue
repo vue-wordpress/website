@@ -1,10 +1,12 @@
 <template>
-  <div>
+  <div
+    class="page"
+  >
     <!-- <base-menu
-      :slug="'main-menu'"
+      :slug="'apple-menu'"
     /> -->
     <div
-      class="height--xxs"
+      class="height--md"
     />
     <nuxt />
   </div>
