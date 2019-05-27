@@ -114,6 +114,7 @@ export default {
         @include font-size(14px);
         line-height: -.01em;
         @include color(white);
+        @include padding-bottom(1px);
       }
 
       > ul {

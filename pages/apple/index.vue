@@ -34,6 +34,17 @@ export default {
 
 .apple-home {
   @include padding-top(2.75rem);
+
+  .wp-block-spacer {
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 </style>
