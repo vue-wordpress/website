@@ -5140,10 +5140,10 @@ gzip-size@^5.0.0:
     duplexer "^0.1.1"
     pify "^4.0.1"
 
-hajime@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/hajime/-/hajime-1.0.8.tgz#636c752763b7d98743f1f438b5eac60b99ca00bc"
-  integrity sha512-rQP0xPESg0niZ0gH2RuuU3z3cxrp/9WP1QmP/+AP37ov3/eK1L5qpDCZETLM32PTqRfbBDGDD9btLIGCOad/uw==
+hajime@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/hajime/-/hajime-1.0.11.tgz#438098e4f4f5b802a4d27f66bd7fe51fd2582c76"
+  integrity sha512-PI8hfoWAlB6fvr4y+ewTuNPtXBDaidYCzm3QWfOZnMhDqSg8iVXfZ72leEcHuHz0ZkELGoVAGhN4fXLJU4dVNQ==
 
 har-schema@^2.0.0:
   version "2.0.0"
