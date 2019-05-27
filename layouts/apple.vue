@@ -40,12 +40,12 @@ p, h1, h2, h3, h4, h5 {
   }
 
   .apple-product-menu {
-    @include height(calc( #{$height-xxs} * .8 ));
+    @include height(calc( #{map-get($height, xxs)} * .8 ));
     @include background-color(rgba(242,242,242,0.7));
   }
 
   .background-color--space-gray {
-    background-color: #121217;
+    background-color: map-get($color, space-gray);
   }
 }
 

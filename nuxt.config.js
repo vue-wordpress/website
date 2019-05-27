@@ -15,7 +15,8 @@ export default {
       { name: 'google-site-verification', content: 'AY-a4ORJi1hIBLAWe1W2-K2kjr0b8-PMXHRjKlDIeGg' }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/img/vuejs-logo.png' }
+      { rel: 'icon', type: 'image/png', href: '/img/vuejs-logo.png' },
+      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/mailtoharshit/San-Francisco-Font-/sanfrancisco.css' }
     ]
   },
 
