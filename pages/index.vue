@@ -29,11 +29,11 @@ export default {
 @import '~/styles/theme/main.scss';
 
 .home {
-  // .column {
-  //   > div {
-  //     @include width(100);
-  //   }
-  // }
+  .column {
+    > div {
+      @include width(100%);
+    }
+  }
 }
 
 </style>
