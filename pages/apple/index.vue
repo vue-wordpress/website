@@ -23,7 +23,7 @@ export default {
   components: {
     AppleHeader
   },
-  mixins: [loadSections(FetchHookTypes.AsyncData)]
+  mixins: [loadSections('apple', FetchHookTypes.AsyncData)]
 }
 </script>
 

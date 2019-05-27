@@ -16,7 +16,7 @@ import loadSections from 'vue-wp-json/mixins/loadSections'
 import { FetchHookTypes } from 'vue-wp-json/types'
 
 export default {
-  mixins: [loadSections(FetchHookTypes.AsyncData)],
+  mixins: [loadSections('start', FetchHookTypes.AsyncData)],
   components: {
     Logo
   }
