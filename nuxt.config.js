@@ -84,7 +84,8 @@ export default {
   generate: {
     routes: [
       '/page/test',
-      '/page/apple'
+      '/page/apple',
+      '/apple'
     ]
   }
 }
