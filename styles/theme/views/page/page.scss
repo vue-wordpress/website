@@ -65,6 +65,28 @@
             }
           }
 
+          .has-text-color {
+            &.has-primary-color {
+              @include color($color-primary);
+            }
+
+            &.has-secondary-color {
+              @include color($color-secondary);
+            }
+
+            &.has-dark-gray-color {
+              @include color($color-dark-gray);
+            }
+
+            &.has-light-gray-color {
+              @include color($color-light-gray);
+            }
+
+            &.has-white-color {
+              @include color(white);
+            }
+          }
+
           .wp-block {
             @mixin wp-block-boxed {
               @include container;
@@ -81,37 +103,37 @@
               }
               &.has {
                 &-2-columns {
-                  @include grid__layout--2-col;
+                  @include grid-layout(2, 1fr);
                 }
                 &-3-columns {
-                  @include grid__layout--3-col;
+                  @include grid-layout(3, 1fr);
                 }
                 &-4-columns {
-                  @include grid__layout--4-col;
+                  @include grid-layout(4, 1fr);
                 }
                 &-5-columns {
-                  @include grid__layout--5-col;
+                  @include grid-layout(5, 1fr);
                 }
                 &-6-columns {
-                  @include grid__layout--6-col;
+                  @include grid-layout(6, 1fr);
                 }
                 &-7-columns {
-                  @include grid__layout--7-col;
+                  @include grid-layout(7, 1fr);
                 }
                 &-8-columns {
-                  @include grid__layout--8-col;
+                  @include grid-layout(8, 1fr);
                 }
                 &-9-columns {
-                  @include grid__layout--9-col;
+                  @include grid-layout(9, 1fr);
                 }
                 &-10-columns {
-                  @include grid__layout--10-col;
+                  @include grid-layout(10, 1fr);
                 }
                 &-11-columns {
-                  @include grid__layout--11-col;
+                  @include grid-layout(11, 1fr);
                 }
                 &-12-columns {
-                  @include grid__layout--12-col;
+                  @include grid-layout(12, 1fr);
                 }
               }
 
