@@ -66,7 +66,7 @@ export default {
 
 <style lang="scss">
 
-@import 'hajime';
+@import 'fantastic-css';
 
 .apple-header {
   @include background-color(rgba(45,45,45,0.98));

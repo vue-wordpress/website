@@ -83,6 +83,6 @@ dist
 # Service worker
 sw.*
 
-# Ignore Hajime git
+# Ignore fantastic-css git
 
-styles/hajime/.git/
+styles/fantastic-css/.git/

@@ -119,7 +119,7 @@ export default {
 
 <style lang="scss">
 
-@import 'hajime/main.scss';
+@import 'fantastic-css/main.scss';
 @import '~/styles/theme/main.scss';
 
 .apple-mac {

@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss">
 
-@import 'hajime/main.scss';
+@import 'fantastic-css/main.scss';
 
 .basic-header {
   @include background-color(map-get($color, extra-light-gray));
