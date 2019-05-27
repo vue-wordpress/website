@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss">
 
-@import 'hajime/core/mixins/mixins.scss';
+@import 'fantastic-css/core/mixins/mixins.scss';
 
 .logo {
   @include flex;
