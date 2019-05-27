@@ -6,7 +6,7 @@
       class="apple-header__inner"
     >
       <nuxt-link
-        :to="'/'"
+        :to="'/apple'"
       >
         <logo
           class="apple-header__logo"

@@ -16,7 +16,7 @@ import loadSections from 'vue-wp-json/mixins/loadSections'
 import { FetchHookTypes } from 'vue-wp-json/types'
 
 export default {
-  // layout: 'apple',
+  layout: 'apple',
   mixins: [loadSections('mac', FetchHookTypes.AsyncData)],
   components: {
     Logo
