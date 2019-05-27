@@ -72,6 +72,7 @@ export default {
   @include background-color(rgba(45,45,45,0.98));
   @include position(fixed !important);
   @include width(100% !important);
+  z-index: 999;
 
   &__inner {
     @include boxed($boxed-max-width: 980px);
