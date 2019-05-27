@@ -4588,6 +4588,11 @@ extsprintf@^1.2.0:
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
 
+fantastic-css@^1.0.14:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/fantastic-css/-/fantastic-css-1.0.14.tgz#00c8ea109ffcbb96a25b76a036ab48bc4abe925d"
+  integrity sha512-wlkYF/7Vwa2GsZXchDdxxQliG+Yz54huhHU+OavVsfwHEmeAPiulnmIfYckmTERpqLjAqfQ0jMLckvbZu7HK5Q==
+
 fast-deep-equal@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-2.0.1.tgz#7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49"
@@ -5139,11 +5144,6 @@ gzip-size@^5.0.0:
   dependencies:
     duplexer "^0.1.1"
     pify "^4.0.1"
-
-hajime@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/hajime/-/hajime-1.0.11.tgz#438098e4f4f5b802a4d27f66bd7fe51fd2582c76"
-  integrity sha512-PI8hfoWAlB6fvr4y+ewTuNPtXBDaidYCzm3QWfOZnMhDqSg8iVXfZ72leEcHuHz0ZkELGoVAGhN4fXLJU4dVNQ==
 
 har-schema@^2.0.0:
   version "2.0.0"
