@@ -95,9 +95,9 @@ export default {
       @include place-content(center);
       @include flex-direction(column);
       @include align-items(center);
-      @include margin-right(calc( #{$gap-ml} * 1.05 ));
-      @include hover__opacity--md;
-      @include transition($transition-ease-out-fast);
+      @include margin-right(calc( #{map-get($gap, ml)} * 1.05 ));
+      @include hover($hover-opacity: map-get($opacity, md));
+      @include transition(all map-get($transition-time, xs) ease-out);
       &:last-of-type {
         margin-right: 0;
       }
@@ -122,9 +122,9 @@ export default {
         display: none;
         @include position(absolute);
         transform: translateY(4rem);
-        @include min-width($width-xxs);
+        @include min-width(map-get($width, xxs));
         @include justify-content(center);
-        @include padding-y($gap-xs);
+        @include padding(map-get($gap, xs));
       }
 
     }

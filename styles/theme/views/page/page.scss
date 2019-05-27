@@ -45,19 +45,19 @@
 
           .has-background {
             &.has-primary-background-color {
-              @include background-color($color-primary);
+              @include background-color(map-get($color, primary));
             }
 
             &.has-secondary-background-color {
-              @include background-color($color-secondary);
+              @include background-color(map-get($color, secondary));
             }
 
             &.has-dark-gray-background-color {
-              @include background-color($color-dark-gray);
+              @include background-color(map-get($color, dark-gray));
             }
 
             &.has-light-gray-background-color {
-              @include background-color($color-light-gray);
+              @include background-color(map-get($color, light-gray));
             }
 
             &.has-white-background-color {
@@ -67,19 +67,19 @@
 
           .has-text-color {
             &.has-primary-color {
-              @include color($color-primary);
+              @include color(map-get($color, primary));
             }
 
             &.has-secondary-color {
-              @include color($color-secondary);
+              @include color(map-get($color, secondary));
             }
 
             &.has-dark-gray-color {
-              @include color($color-dark-gray);
+              @include color(map-get($color, dark-gray));
             }
 
             &.has-light-gray-color {
-              @include color($color-light-gray);
+              @include color(map-get($color, light-gray));
             }
 
             &.has-white-color {
@@ -185,7 +185,7 @@
             }
 
             &-cover {
-              @include height($height-lg);
+              @include height(map-get($height, lg));
               @include background-repeat(no-repeat);
               @include background-size(cover);
               @include grid;

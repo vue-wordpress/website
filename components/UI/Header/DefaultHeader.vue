@@ -40,7 +40,7 @@ export default {
 @import 'hajime/main.scss';
 
 .basic-header {
-  @include background-color($color-extra-light-gray);
+  @include background-color(map-get($color, extra-light-gray));
   border-bottom: 1px solid #f1f1f1;
 
   &__inner {
@@ -63,7 +63,7 @@ export default {
       @include place-content(center);
       @include flex-direction(column);
       @include align-items(center);
-      @include margin-right($gap-sm);
+      @include margin-right(map-get($gap, sm));
       &:hover {
 
         > ul {
@@ -75,17 +75,17 @@ export default {
         @include height(100);
         @include flex;
         @include place-items(center);
-        @include font-weight($font-weight-semibold);
-        @include font-size($font-size-sm);
+        @include font-weight(map-get($font-weight, semibold));
+        @include font-size(map-get($font-size, sm));
       }
 
       > ul {
         display: none;
         @include position(absolute);
         transform: translateY(4rem);
-        @include min-width($width-xxs);
+        @include min-width(map-get($width, xxs));
         @include justify-content(center);
-        @include padding-y($gap-xs);
+        @include padding-y(map-get($gap, xs));
       }
     }
   }

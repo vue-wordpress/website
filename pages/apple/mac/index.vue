@@ -131,7 +131,7 @@ export default {
     @include justify-content(center);
 
     &__item {
-      @include margin-right(calc( 1.05 * #{$gap-ms} ));
+      @include margin-right(calc( 1.05 * #{map-get($gap, ms)} ));
 
       &__inner {
         @include flex;
@@ -139,7 +139,6 @@ export default {
         @include justify-content(center);
         @include font-size(11px);
         @include flex-direction(column);
-        // @include transition($transition-ease-out-medium);
         &:last-of-type {
           margin-right: 0;
         }
