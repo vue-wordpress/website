@@ -1,24 +1,18 @@
 <template>
-  <div
-    class="page"
-  >
-    <!-- <base-menu
-      :slug="'apple-menu'"
-    /> -->
-    <div
-      class="height--md"
-    />
+  <div>
+    <apple-header />
     <nuxt />
   </div>
 </template>
 
 <script>
 
-import BaseMenu from 'vue-wp-json/components/Base/BaseMenu';
+import AppleHeader from '~/components/UI/Header/AppleHeader'
 
 export default {
   components: {
-    BaseMenu
+    AppleHeader
   }
 }
+
 </script>

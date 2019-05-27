@@ -31,7 +31,7 @@ export default {
 .home {
   // .column {
   //   > div {
-  //     @include width--100;
+  //     @include width(100);
   //   }
   // }
 }

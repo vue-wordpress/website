@@ -15,8 +15,8 @@ export default {
       { name: 'google-site-verification', content: 'AY-a4ORJi1hIBLAWe1W2-K2kjr0b8-PMXHRjKlDIeGg' }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/vuejs-logo.png' }
-      // { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/new-fantastic/hajime/main.min.css' }
+      { rel: 'icon', type: 'image/png', href: '/img/vuejs-logo.png' },
+      { rel: 'stylesheet', href: 'hajime/main.min.css' }
     ]
   },
 

@@ -1,7 +1,7 @@
 <template>
   <div class="logo">
     <img
-      src="/logo.png"
+      :src="image"
       alt="Vue Wordpress"
       :width="width"
       :height="height"
@@ -21,6 +21,11 @@ export default {
       type: String,
       required: false,
       default: '120px'
+    },
+    image: {
+      type: String,
+      required: true,
+      default: '/img/logo.png'
     }
   }
 }
@@ -31,12 +36,11 @@ export default {
 @import 'hajime/core/mixins/mixins.scss';
 
 .logo {
-  @include width--100;
   @include flex;
-  @include justify__content--center;
+  @include justify-content(center);
 
   img {
-    @include object-fit--contain;
+    @include object-fit(contain);
   }
 }
 
