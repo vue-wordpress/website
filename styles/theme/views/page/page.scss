@@ -21,7 +21,7 @@
   }
 
   &__heading {
-    @include text__align--center;
+    @include text-align(center);
     display: none;
   }
 
@@ -30,38 +30,38 @@
     .column {
 
       > div {
-        @include width--100;
+        @include width(100);
 
         .content {
 
           .alignwide {
-            @include width--100;
+            @include width(100);
           }
 
           .alignfull {
-            @include width--100;
-            @include max-width--100vw;
+            @include width(100);
+            @include max-width(100vw);
           }
 
           .has-background {
             &.has-primary-background-color {
-              @include background__color--primary;
+              @include background-color($color-primary);
             }
 
             &.has-secondary-background-color {
-              @include background__color--secondary;
+              @include background-color($color-secondary);
             }
 
             &.has-dark-gray-background-color {
-              @include background__color--dark-gray;
+              @include background-color($color-dark-gray);
             }
 
             &.has-light-gray-background-color {
-              @include background__color--light-gray;
+              @include background-color($color-light-gray);
             }
 
             &.has-white-background-color {
-              @include background__color--white;
+              @include background-color(white);
             }
           }
 
@@ -76,8 +76,8 @@
                 @include wp-block-boxed;
               }
               &.alignfull {
-                @include width--100;
-                @include max-width--100vw;
+                @include width(100);
+                @include max-width(100vw);
               }
               &.has {
                 &-2-columns {
@@ -119,7 +119,7 @@
 
                 > div {
                   &.alignwide {
-                    @include width--100--important;
+                    @include width(100% !important);
                   }
                 }
               }
@@ -129,15 +129,15 @@
               // @include flex;
               figure {
                 @include flex;
-                @include width--100;
+                @include width(100);
                 &.aligncenter {
-                  @include justify__content--center;
+                  @include justify-content(center);
                 }
               }
               &.alignwide {
-                @include justify__content--center;
+                @include justify-content(center);
                 img {
-                  @include object-fit--contain;
+                  @include object-fit(contain);
                 }
               }
             }
@@ -150,10 +150,10 @@
                 width: auto;
               }
               &.aligncenter {
-                @include justify__content--center;
-                @include text__align--center;
+                @include justify-content(center);
+                @include text-align(center);
                 a {
-                  @include justify__self--center;
+                  @include justify-self(center);
                 }
               }
 
@@ -163,28 +163,25 @@
             }
 
             &-cover {
-              @include height--lg;
-              @include background__repeat--no-repeat;
-              @include background__size--cover;
+              @include height($height-lg);
+              @include background-repeat(no-repeat);
+              @include background-size(cover);
               @include grid;
-              @include place__content--center;
-              &.place__content--start--center {
-                @include place__content--start--center;
+              @include place-content(center);
+              &.place-content--start--center {
+                @include place-content(start center);
               }
               &.alignwide {
                 @include wp-block-boxed;
               }
 
               &__inner-container {
-                // @include width--100;
-                // @include height--100;
-                // @include padding--sm;
                 @include flex;
-                @include flex__direction--column;
+                @include flex-direction(column);
 
                 > * {
-                  @include text__color--light;
-                  @include width--100;
+                  @include color(white);
+                  @include width(100);
                   display: initial;
                 }
 

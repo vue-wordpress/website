@@ -1,11 +1,14 @@
 <template>
-  <div
-    class="wp-page apple-home"
-  >
-    <Sections
-      v-if="wpData"
-      :data="wpData"
-    />
+  <div>
+    <apple-header />
+    <div
+      class="wp-page apple-home"
+    >
+      <Sections
+        v-if="wpData"
+        :data="wpData"
+      />
+    </div>
   </div>
 </template>
 
@@ -14,13 +17,13 @@
 import Logo from '~/components/Logo.vue'
 import loadSections from 'vue-wp-json/mixins/loadSections'
 import { FetchHookTypes } from 'vue-wp-json/types'
+import AppleHeader from '~/components/UI/Header/AppleHeader'
 
 export default {
-  // layout: 'apple',
-  mixins: [loadSections(FetchHookTypes.AsyncData)],
   components: {
-    Logo
-  }
+    AppleHeader
+  },
+  mixins: [loadSections(FetchHookTypes.AsyncData)]
 }
 </script>
 
@@ -29,12 +32,8 @@ export default {
 @import 'hajime/main.scss';
 @import '~/styles/theme/main.scss';
 
-.home {
-  // .column {
-  //   > div {
-  //     @include width--100;
-  //   }
-  // }
+.apple-home {
+  @include padding-top(2.75rem);
 }
 
 </style>
