@@ -30,16 +30,16 @@
     .column {
 
       > div {
-        @include width(100);
+        @include width(100%);
 
         .content {
 
           .alignwide {
-            @include width(100);
+            @include width(100%);
           }
 
           .alignfull {
-            @include width(100);
+            @include width(100%);
             @include max-width(100vw);
           }
 

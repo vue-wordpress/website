@@ -78,7 +78,14 @@ export default {
     routes: [
       '/page/test',
       '/page/apple',
-      '/apple'
+      '/apple',
+      '/apple/mac',
+      '/apple/ipad',
+      '/apple/iphone',
+      '/apple/watch',
+      '/apple/tv',
+      '/apple/music',
+      '/apple/support'
     ]
   }
 }

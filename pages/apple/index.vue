@@ -1,14 +1,11 @@
 <template>
-  <div>
-    <apple-header />
-    <div
-      class="wp-page apple-home"
-    >
-      <Sections
-        v-if="wpData"
-        :data="wpData"
-      />
-    </div>
+  <div
+    class="wp-page apple-home"
+  >
+    <Sections
+      v-if="wpData"
+      :data="wpData"
+    />
   </div>
 </template>
 
@@ -20,6 +17,7 @@ import { FetchHookTypes } from 'vue-wp-json/types'
 import AppleHeader from '~/components/UI/Header/AppleHeader'
 
 export default {
+  layout: 'apple',
   components: {
     AppleHeader
   },
