@@ -96,7 +96,7 @@ export default {
       @include flex-direction(column);
       @include align-items(center);
       @include margin-right(calc( #{map-get($gap, ml)} * 1.05 ));
-      @include hover__opacity--md;
+      @include hover($hover-opacity: map-get($opacity, md));
       @include transition(all map-get($transition-time, xs) ease-out);
       &:last-of-type {
         margin-right: 0;
