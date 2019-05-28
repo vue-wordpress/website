@@ -61,8 +61,24 @@ export default {
         router: 'manual',
         store: 'manual'
       }
-    ]
+    ],
+    '@nuxtjs/pwa'
   ],
+
+  workbox: {
+    runtimeCaching: [
+      {
+        urlPattern: new RegExp('^https://wp\.vuewordpress\.io/'),
+        handler: 'networkFirst',
+        options: {
+          networkTimeoutSeconds: 5,
+          cacheableResponse: {
+            statuses: [0, 200]
+          }
+        }
+      }
+    ]
+  },
 
   /*
   ** Build configuration

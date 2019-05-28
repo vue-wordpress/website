@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.2.0",
+    "@nuxtjs/pwa": "^3.0.0-beta.16",
     "cross-env": "^5.2.0",
     "fantastic-css": "^1.0.14",
     "node-sass": "^4.12.0",
