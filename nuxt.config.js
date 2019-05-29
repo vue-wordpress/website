@@ -23,14 +23,15 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: 'rgba(45, 45, 45, 0.98)' },
 
   /*
   ** Global CSS
   */
   css: [
-    'fantastic-css/main.scss',
-    '@/styles/theme/main.scss'
+    'fantastic-css',
+    'fantastic-gutenberg',
+    '@/styles/themes/apple/main.scss'
   ],
 
   /*
@@ -49,7 +50,7 @@ export default {
       }
     ],
     [
-      'nuxt-wp-json', {
+      '@vue-wordpress/nuxt', {
         config: {
           url: 'https://wp.vuewordpress.io/',
           lang: 'en',

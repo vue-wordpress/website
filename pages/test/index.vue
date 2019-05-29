@@ -27,6 +27,6 @@ export default {
 <style lang="scss">
 
 @import 'fantastic-css/main.scss';
-@import '~/styles/theme/main.scss';
+@import '~/styles/themes/apple/main.scss';
 
 </style>

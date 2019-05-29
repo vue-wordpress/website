@@ -1,25 +1,25 @@
 <template>
   <header
-    class="apple-header"
+    class="apple__header"
   >
     <div
-      class="apple-header__inner"
+      class="apple__header__inner"
     >
       <nuxt-link
         :to="'/apple'"
       >
         <logo
-          class="apple-header__logo"
+          class="apple__header__logo"
           :height="'46px'"
           :image="'/img/appleLogo.svg'"
         />
       </nuxt-link>
       <base-menu
-        class="apple-header__nav"
+        class="apple__header__nav"
         slug="apple-menu"
       />
       <ul
-        class="apple-header__icons"
+        class="apple__header__icons"
       >
         <li>
           <nuxt-link
@@ -68,7 +68,7 @@ export default {
 
 @import 'fantastic-css';
 
-.apple-header {
+.apple__header {
   @include background-color(rgba(45,45,45,0.98));
   @include position(fixed !important);
   @include width(100% !important);
@@ -116,8 +116,11 @@ export default {
         line-height: -.01em;
         @include color(white);
         @include padding-bottom(1px);
-      }
+        &.nuxt-link-active {
+          @include opacity(map-get($opacity, ml));
+        }
 
+      }
       > ul {
         display: none;
         @include position(absolute);

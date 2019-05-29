@@ -1,6 +1,6 @@
 <template>
   <div
-    class="wp-page apple-home"
+    class="wp-page apple__home"
   >
     <Sections
       v-if="wpData"
@@ -14,12 +14,12 @@
 import Logo from '~/components/Logo.vue'
 import loadSections from 'vue-wp-json/mixins/loadSections'
 import { FetchHookTypes } from 'vue-wp-json/types'
-import AppleHeader from '~/components/UI/Header/AppleHeader'
+// // import AppleCategoryHeader from '~/components/UI/Header/AppleCategoryHeader'
 
 export default {
   layout: 'apple',
   components: {
-    AppleHeader
+    // AppleCategoryHeader
   },
   mixins: [loadSections('apple', FetchHookTypes.AsyncData)]
 }
@@ -28,9 +28,9 @@ export default {
 <style lang="scss">
 
 @import 'fantastic-css/main.scss';
-@import '~/styles/theme/main.scss';
+@import '~/styles/themes/apple/main.scss';
 
-.apple-home {
+.apple__home {
   @include padding-top(2.75rem);
 
   .wp-block-spacer {

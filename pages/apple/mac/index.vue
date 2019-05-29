@@ -1,34 +1,10 @@
 <template>
   <div
-    class="wp-page apple-page apple-page apple-mac"
+    class="wp-page apple__category"
   >
-    <ul
-      class="apple-mac__menu apple-product-menu"
-    >
-      <li
-        class="apple-mac__menu__item"
-        v-for="item in macMenu"
-        :key="item.label"
-      >
-        <nuxt-link
-          :to="item.link"
-          class="apple-mac__menu__item__inner"
-        >
-          <img
-            :src="item.icon"
-            :alt="item.label"
-            height="54px"
-          >
-          {{ item.label }}
-          <span
-            class="new-product"
-            v-if="item.new"
-          >
-            New
-          </span>
-        </nuxt-link>
-      </li>
-    </ul>
+    <apple-category-header
+      :menu="macMenu"
+    />
     <Sections
       v-if="wpData"
       :data="wpData"
@@ -39,6 +15,8 @@
 <script>
 
 import Logo from '~/components/Logo.vue'
+import AppleCategoryHeader from '~/components/Apple/UI/Header/AppleCategoryHeader'
+
 import loadSections from 'vue-wp-json/mixins/loadSections'
 import { FetchHookTypes } from 'vue-wp-json/types'
 
@@ -46,7 +24,8 @@ export default {
   layout: 'apple',
   mixins: [loadSections('mac', FetchHookTypes.AsyncData)],
   components: {
-    Logo
+    Logo,
+    AppleCategoryHeader
   },
   data () {
     return {
@@ -120,46 +99,6 @@ export default {
 <style lang="scss">
 
 @import 'fantastic-css/main.scss';
-@import '~/styles/theme/main.scss';
-
-.apple-mac {
-
-
-  &__menu {
-    @include flex;
-    @include align-items(center);
-    @include justify-content(center);
-
-    &__item {
-      @include margin-right(calc( 1.05 * #{map-get($gap, ms)} ));
-
-      &__inner {
-        @include flex;
-        @include align-items(center);
-        @include justify-content(center);
-        @include font-size(11px);
-        @include flex-direction(column);
-        &:last-of-type {
-          margin-right: 0;
-        }
-        &:hover {
-          color: #0070c9;
-          cursor: pointer;
-          text-decoration: none !important;
-        }
-
-        .new-product {
-          font-size: 9px;
-          line-height: 1.22226;
-          font-weight: 400;
-          letter-spacing: -.006em;
-          color: #ef5602;
-          @include position(absolute);
-          transform: translateY(2.54rem);
-        }
-      }
-    }
-  }
-}
+@import '~/styles/themes/apple/main.scss';
 
 </style>
