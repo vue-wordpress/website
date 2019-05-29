@@ -12,8 +12,8 @@
 <script>
 
 import Logo from '~/components/Logo.vue'
-import loadSections from 'vue-wp-json/mixins/loadSections'
-import { FetchHookTypes } from 'vue-wp-json/types'
+import loadSections from '@vue-wordpress/core/mixins/loadSections'
+import { FetchHookTypes } from '@vue-wordpress/core/types'
 
 export default {
   // layout: 'apple',

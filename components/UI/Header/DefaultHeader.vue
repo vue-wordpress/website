@@ -24,7 +24,7 @@
 <script>
 
 import Logo from '~/components/Logo';
-import BaseMenu from 'vue-wp-json/components/Base/BaseMenu';
+import BaseMenu from '@vue-wordpress/core/components/Base/BaseMenu';
 
 export default {
   components: {

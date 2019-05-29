@@ -85,7 +85,7 @@ export default {
   ** Build configuration
   */
   build: {
-    transpile: ['vue-wp-json'],
+    transpile: ['@vue-wordpress/core'],
     /*
     ** You can extend webpack config here
     */

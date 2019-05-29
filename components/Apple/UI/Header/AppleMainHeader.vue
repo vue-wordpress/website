@@ -5,7 +5,7 @@
     <div
       class="apple__header__inner"
     >
-      <nuxt-link
+      <router-link
         :to="'/apple'"
       >
         <logo
@@ -13,7 +13,7 @@
           :height="'46px'"
           :image="'/img/appleLogo.svg'"
         />
-      </nuxt-link>
+      </router-link>
       <base-menu
         class="apple__header__nav"
         slug="apple-menu"
@@ -22,7 +22,7 @@
         class="apple__header__icons"
       >
         <li>
-          <nuxt-link
+          <router-link
             :to="'#'"
           >
             <img
@@ -31,10 +31,10 @@
               width="16px"
               height="44px"
             >
-          </nuxt-link>
+          </router-link>
         </li>
         <li>
-          <nuxt-link
+          <router-link
             :to="'#'"
           >
             <img
@@ -43,7 +43,7 @@
               width="14px"
               height="44px"
             >
-          </nuxt-link>
+          </router-link>
         </li>
       </ul>
     </div>
@@ -53,7 +53,7 @@
 <script>
 
 import Logo from '~/components/Logo';
-import BaseMenu from 'vue-wp-json/components/Base/BaseMenu';
+import BaseMenu from '@vue-wordpress/core/components/Base/BaseMenu';
 
 export default {
   components: {
