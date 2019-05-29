@@ -5,14 +5,14 @@
     <div
       class="basic-header__inner"
     >
-      <nuxt-link
+      <router-link
         :to="'/'"
       >
         <logo
           class="basic-header__logo"
           :height="'30px'"
         />
-      </nuxt-link>
+      </router-link>
       <base-menu
         class="basic-header__nav"
         slug="main-menu"

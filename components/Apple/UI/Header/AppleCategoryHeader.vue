@@ -10,7 +10,7 @@
         v-for="item in menu"
         :key="item.label"
       >
-        <nuxt-link
+        <router-link
           :to="item.link"
           class="apple__category__header__menu__item__inner"
         >
@@ -26,7 +26,7 @@
           >
             New
           </span>
-        </nuxt-link>
+        </router-link>
       </li>
     </ul>
   </div>

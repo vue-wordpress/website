@@ -116,7 +116,7 @@ export default {
         line-height: -.01em;
         @include color(white);
         @include padding-bottom(1px);
-        &.nuxt-link-active {
+        &.router-link-active {
           @include opacity(map-get($opacity, ml));
         }
 
