@@ -1262,7 +1262,7 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
-"@vue-wordpress/core@1.x":
+"@vue-wordpress/core@^1.0.44":
   version "1.0.44"
   resolved "https://registry.yarnpkg.com/@vue-wordpress/core/-/core-1.0.44.tgz#7f480520a001df9e6ee1a412c6b8aa22c806e259"
   integrity sha512-8BP/Y2l9CGBB3CCp5W2HcnCuYRpsbFfj+uUqOQQia7z8OfrZfvWu2Zea8ceGlrdaUmr+kAYLiab3Lkihqz3PRQ==
@@ -1270,12 +1270,12 @@
     axios "^0.18.0"
     vue-meta-info "^0.1.7"
 
-"@vue-wordpress/nuxt@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@vue-wordpress/nuxt/-/nuxt-1.0.5.tgz#4fbc4e88128a7d69d8630756f5526dc5bbe6c28a"
-  integrity sha512-syGJC67+0yWCyjhdMJUrUfCBQIMCQIGL5bB8wzWGWVbjX0rI6bQ50C7Mj9dkDROjFiA54LJoL8DzLEZuw5BEGA==
+"@vue-wordpress/nuxt@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@vue-wordpress/nuxt/-/nuxt-1.0.6.tgz#7975b76136b8d684ae846d1ceef8b3c151976ca4"
+  integrity sha512-dZjpiHeQ7VcqRhtlZ/dZRdsvO8kxlwkzoqR6Qnt9dnaziu4jtddH26rlo89P8IqB0MseKULOwXnaEBFWejdDGw==
   dependencies:
-    "@vue-wordpress/core" "1.x"
+    "@vue-wordpress/core" "^1.0.44"
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.0.0":
   version "1.0.0"
@@ -3550,7 +3550,7 @@ extsprintf@^1.2.0:
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
 
-fantastic-css@^1.0.19, fantastic-css@^1.0.22:
+fantastic-css@^1.0.22:
   version "1.0.22"
   resolved "https://registry.yarnpkg.com/fantastic-css/-/fantastic-css-1.0.22.tgz#a881981f79cf69e95a8676ecd2088e685f632aa0"
   integrity sha512-DyZFQdh6LfYpF+Qz9X+E9Aapn6kMHOC3w5LF0Re4Pzwp6BjQMGX+ize1EBfly+sr9l4p3amD81d5LlIcfAWwfQ==
@@ -3558,12 +3558,20 @@ fantastic-css@^1.0.19, fantastic-css@^1.0.22:
     node-sass "^4.12.0"
     sass-loader "^7.1.0"
 
-fantastic-gutenberg@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/fantastic-gutenberg/-/fantastic-gutenberg-1.0.5.tgz#34e956c8b940602f9877ed176677892089a199e2"
-  integrity sha512-715KPTASzKgcflfEWOY2y2ZmL0K3sxPbFhWAAK6ouWKwzhqGx6RqRzTbKc1keCTJ6zuzw5TndpBFAltyzgvslw==
+fantastic-css@^1.0.31:
+  version "1.0.31"
+  resolved "https://registry.yarnpkg.com/fantastic-css/-/fantastic-css-1.0.31.tgz#1df882b4dda261273d0decbad7db6abc5c1cb384"
+  integrity sha512-hFnXwa64bc++aKjERfgeHbk0Pzqh29PSGxU5K3CKn6z38xqnLlZ17H5+jElf8wVG3YC5IykO/3uOce1+5E2paA==
   dependencies:
-    fantastic-css "^1.0.19"
+    node-sass "^4.12.0"
+    sass-loader "^7.1.0"
+
+fantastic-gutenberg@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/fantastic-gutenberg/-/fantastic-gutenberg-1.0.6.tgz#dd9dc6f328c8a7b5a192ee6e54adb93f7224ce59"
+  integrity sha512-V8f4rLV6MM6J9iN3c8T5z/dUjdNxAYAk6ZJBMNQl3EMD+RLtWiwsFMYIOdX0j0hXq+r7UZbExNfuMTvHSrMnLw==
+  dependencies:
+    fantastic-css "^1.0.22"
 
 fast-deep-equal@^2.0.1:
   version "2.0.1"

@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss">
 
-@import 'fantastic-css/main.scss';
+@import 'fantastic-css';
 
 .basic-header {
   @include background-color(map-get($color, extra-light-gray));
