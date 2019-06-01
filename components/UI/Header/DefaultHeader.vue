@@ -5,14 +5,14 @@
     <div
       class="basic-header__inner"
     >
-      <nuxt-link
+      <router-link
         :to="'/'"
       >
         <logo
           class="basic-header__logo"
           :height="'30px'"
         />
-      </nuxt-link>
+      </router-link>
       <base-menu
         class="basic-header__nav"
         slug="main-menu"
@@ -24,7 +24,7 @@
 <script>
 
 import Logo from '~/components/Logo';
-import BaseMenu from 'vue-wp-json/components/Base/BaseMenu';
+import BaseMenu from '@vue-wordpress/core/components/Base/BaseMenu';
 
 export default {
   components: {
@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss">
 
-@import 'fantastic-css/main.scss';
+@import 'fantastic-css';
 
 .basic-header {
   @include background-color(map-get($color, extra-light-gray));

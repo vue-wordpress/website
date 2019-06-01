@@ -1,6 +1,5 @@
-@import 'fantastic-css/core/mixins/mixins.scss';
-@import 'fantastic-css/layout/base/mixins/grid.scss';
-@import '~/styles/theme/components/base/buttons.scss';
+@import 'fantastic-css';
+@import '../../components/base/buttons.scss';
 
 .wp-page,
 .page {
@@ -95,7 +94,7 @@
 
             &-columns {
               &.alignwide {
-                @include wp-block-boxed;
+                @include container-boxed;
               }
               &.alignfull {
                 @include width(100);
@@ -165,7 +164,7 @@
             }
 
             &-button {
-              // @include wp-block-boxed;
+              // @include container-boxed;
               @include flex;
               a {
                 @include btn;
@@ -194,7 +193,7 @@
                 @include place-content(start center);
               }
               &.alignwide {
-                @include wp-block-boxed;
+                @include container-boxed;
               }
 
               &__inner-container {
