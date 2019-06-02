@@ -29,8 +29,8 @@ export default {
   ** Global CSS
   */
   css: [
-    'fantastic-css',
-    'fantastic-gutenberg',
+    // 'fantastic-css',
+    'fantastic-gutenberg/main.min.css',
     '@/styles/themes/apple/main.scss'
   ],
 

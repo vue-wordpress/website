@@ -25,13 +25,44 @@ export default {
 
 <style lang="scss">
 
-@import 'fantastic-css/main.scss';
+@import '/Users/aleksandergrygier/git/fantastic-css/fantastic-css';
+// @import 'fantastic-css';
 @import '~/styles/themes/apple/main.scss';
 
 .home {
+
+  &__logo {
+    @include media('<=sm') {
+      @include width(3 * map-get($size, md));
+      @include margin-x(auto);
+
+      img {
+        @include object-fit(contain);
+      }
+    }
+  }
+
+  &__heading {
+    @include media('<=ms') {
+      @include font-size(map-deep-get($font, size, md) !important);
+    }
+    @include media('<=sm') {
+      @include font-size(map-deep-get($font, size, ms) !important);
+    }
+  }
+
   .column {
+
     > div {
-      @include width(100%);
+      @include width(90% !important);
+      @include margin-x(auto);
+
+      .has-2-columns {
+        @include media('<=md') {
+          @include grid-layout(1, 1fr, map-get($gap, ms));
+          @include max-width(90vw);
+        }
+      }
     }
   }
 }

@@ -46,14 +46,15 @@ export default {
 
 <style lang="scss">
 
-@import 'fantastic-css';
+@import '/Users/aleksandergrygier/git/fantastic-css/fantastic-css';
+// @import 'fantastic-css';
 
 @mixin apple__category__header {
 
   .apple__category__header{
 
     &__menu {
-      @include flex;
+      @include display(flex);
       @include align-items(center);
       @include justify-content(center);
       
@@ -61,7 +62,7 @@ export default {
         @include margin-right(calc( 1.05 * #{map-get($gap, ms)} ));
         
         &__inner {
-          @include flex;
+          @include display(flex);
           @include align-items(center);
           @include justify-content(center);
           @include font-size(11px);

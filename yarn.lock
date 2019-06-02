@@ -3558,10 +3558,10 @@ fantastic-css@^1.0.22:
     node-sass "^4.12.0"
     sass-loader "^7.1.0"
 
-fantastic-css@^1.0.31:
-  version "1.0.31"
-  resolved "https://registry.yarnpkg.com/fantastic-css/-/fantastic-css-1.0.31.tgz#1df882b4dda261273d0decbad7db6abc5c1cb384"
-  integrity sha512-hFnXwa64bc++aKjERfgeHbk0Pzqh29PSGxU5K3CKn6z38xqnLlZ17H5+jElf8wVG3YC5IykO/3uOce1+5E2paA==
+fantastic-css@^1.0.32:
+  version "1.0.32"
+  resolved "https://registry.yarnpkg.com/fantastic-css/-/fantastic-css-1.0.32.tgz#cdb0101f1a20877913d93f558fc16efa647e241f"
+  integrity sha512-N5CXvkNBV5GeHo30TLQk+XtiV63RCInlYC2F3vo3TA9oksdHZZbVS1lV6uaQvtj35NMNE+Iek8PcoAS8mMlnug==
   dependencies:
     node-sass "^4.12.0"
     sass-loader "^7.1.0"

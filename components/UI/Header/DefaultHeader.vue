@@ -37,7 +37,8 @@ export default {
 
 <style lang="scss">
 
-@import 'fantastic-css';
+@import '/Users/aleksandergrygier/git/fantastic-css/fantastic-css';
+// @import 'fantastic-css';
 
 .basic-header {
   @include background-color(map-get($color, extra-light-gray));
@@ -45,7 +46,7 @@ export default {
 
   &__inner {
     @include boxed;
-    @include flex;
+    @include display(flex);
     @include justify-content(space-between);
     @include align-items(center);
     height: 4rem;
@@ -53,13 +54,13 @@ export default {
 
   &__nav {
     @include height(100);
-    @include flex;
+    @include display(flex);
     @include align-items(center);
     width: auto;
 
     > li {
       @include height(100);
-      @include flex;
+      @include display(flex);
       @include place-content(center);
       @include flex-direction(column);
       @include align-items(center);
@@ -67,13 +68,13 @@ export default {
       &:hover {
 
         > ul {
-          @include flex;
+          @include display(flex);
         }
       }
 
       > a {
         @include height(100);
-        @include flex;
+        @include display(flex);
         @include place-items(center);
         @include font-weight(map-get($font-weight, semibold));
         @include font-size(map-get($font-size, sm));

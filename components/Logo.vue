@@ -33,10 +33,11 @@ export default {
 
 <style lang="scss">
 
-@import 'fantastic-css';
+@import '/Users/aleksandergrygier/git/fantastic-css/fantastic-css';
+// @import 'fantastic-css';
 
 .logo {
-  @include flex;
+  @include display(flex);
   @include justify-content(center);
 
   img {
