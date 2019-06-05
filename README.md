@@ -1,6 +1,6 @@
-# vue-wordpress-website
+# Vue WordPress Website
 
-> Nuxt.js app for Vue Wordpress website
+> Nuxt.js app for **Vue WordPress** using `@vue-wordpress/nuxt` module + **Custom SCSS Gutenberg theme** created with **<a href="https://github.com/sxcss/sxcss">SXCSS</a>**
 
 ## Build Setup
 
