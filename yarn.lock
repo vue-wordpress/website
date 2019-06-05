@@ -3558,14 +3558,6 @@ fantastic-css@^1.0.22:
     node-sass "^4.12.0"
     sass-loader "^7.1.0"
 
-fantastic-css@^1.0.31:
-  version "1.0.31"
-  resolved "https://registry.yarnpkg.com/fantastic-css/-/fantastic-css-1.0.31.tgz#1df882b4dda261273d0decbad7db6abc5c1cb384"
-  integrity sha512-hFnXwa64bc++aKjERfgeHbk0Pzqh29PSGxU5K3CKn6z38xqnLlZ17H5+jElf8wVG3YC5IykO/3uOce1+5E2paA==
-  dependencies:
-    node-sass "^4.12.0"
-    sass-loader "^7.1.0"
-
 fantastic-gutenberg@^1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/fantastic-gutenberg/-/fantastic-gutenberg-1.0.6.tgz#dd9dc6f328c8a7b5a192ee6e54adb93f7224ce59"
@@ -7741,6 +7733,14 @@ svgo@^1.0.0:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+sxcss@^1.0.35:
+  version "1.0.35"
+  resolved "https://registry.yarnpkg.com/sxcss/-/sxcss-1.0.35.tgz#7e73d31c2cb41c7a8ca1de410f5b8b890c4fb077"
+  integrity sha512-nZC/zyfbnpFgjyfBWy/2gNz+GtgQBVtUJs9+wP0UXLg/wXaJ8z3hvJqD7aX00jWWPpJo90K23WXmQO+rkEfolg==
+  dependencies:
+    node-sass "^4.12.0"
+    sass-loader "^7.1.0"
 
 tapable@^0.2.7:
   version "0.2.9"
