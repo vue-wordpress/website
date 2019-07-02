@@ -3,8 +3,8 @@
     class="wp-page test"
   >
     <Sections
-      v-if="wpData"
-      :data="wpData"
+      v-if="test"
+      :data="test"
     />
   </div>
 </template>
@@ -12,12 +12,12 @@
 <script>
 
 import Logo from '~/components/Logo.vue'
-import loadSections from '@vue-wordpress/core/mixins/loadSections'
+import wpData from '@vue-wordpress/core/mixins/wpData'
 import { FetchHookTypes } from '@vue-wordpress/core/types'
 
 export default {
   // layout: 'apple',
-  mixins: [loadSections('test', FetchHookTypes.AsyncData)],
+  mixins: [wpData('test', FetchHookTypes.AsyncData)],
   components: {
     Logo
   }

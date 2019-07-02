@@ -7,6 +7,7 @@
       :slug="'apple-mac-menu'"
     />
     <Sections
+      v-if="mac"
       :data="mac"
     />
   </div>
@@ -17,12 +18,12 @@
 import Logo from '~/components/Logo.vue'
 import AppleCategoryHeader from '~/components/Apple/UI/Header/AppleCategoryHeader'
 
-import loadSections from '@vue-wordpress/core/mixins/loadSections'
+import wpData from '@vue-wordpress/core/mixins/wpData'
 import { FetchHookTypes } from '@vue-wordpress/core/types'
 
 export default {
-  mixins: [loadSections('mac', FetchHookTypes.AsyncData)],
   layout: 'apple',
+  mixins: [wpData('mac', FetchHookTypes.AsyncData)],
   name: 'AppleMac',
   components: {
     Logo,

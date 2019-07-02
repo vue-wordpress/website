@@ -6,8 +6,8 @@
       :menu="macMenu"
     />
     <Sections
-      v-if="wpData"
-      :data="wpData"
+      v-if="mac"
+      :data="mac"
     />
   </div>
 </template>
@@ -17,12 +17,12 @@
 import Logo from '~/components/Logo.vue'
 import AppleCategoryHeader from '~/components/Apple/UI/Header/AppleCategoryHeader'
 
-import loadSections from '@vue-wordpress/core/mixins/loadSections'
+import wpData from '@vue-wordpress/core/mixins/wpData'
 import { FetchHookTypes } from '@vue-wordpress/core/types'
 
 export default {
   layout: 'apple',
-  mixins: [loadSections('mac', FetchHookTypes.AsyncData)],
+  mixins: [wpData('mac', FetchHookTypes.AsyncData)],
   components: {
     Logo,
     AppleCategoryHeader

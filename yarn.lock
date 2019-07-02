@@ -1263,17 +1263,17 @@
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
 "@vue-wordpress/core@^1.x":
-  version "1.0.49"
-  resolved "https://registry.yarnpkg.com/@vue-wordpress/core/-/core-1.0.49.tgz#c5c2bdad54c8a660ea3f07236f625e9a444de5d3"
-  integrity sha512-7mY2/oEHZYyJe9LeBhw9QlQQ3FYA1TlOwPO3G+2ROAbcQthGgUGrSVBs0YFDdmzL/mwxyDwzn1U/gJx2IlgMFA==
+  version "1.0.56"
+  resolved "https://registry.yarnpkg.com/@vue-wordpress/core/-/core-1.0.56.tgz#1a21aff6de99c5a64e253faade7d67d28d347b58"
+  integrity sha512-hOf7BSKdjb63ENAFYfdpwy2tICf0EI9vLJoujt8IRBEyTEv22F5JcNd9LLv4USADGE90Qx1/S61HF+gIJfHZPQ==
   dependencies:
     axios "^0.18.0"
     vue-meta-info "^0.1.7"
 
-"@vue-wordpress/nuxt@^1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@vue-wordpress/nuxt/-/nuxt-1.0.8.tgz#aac41860fa838df20c2aa029b9ed483412c19e36"
-  integrity sha512-q0cl1HTKbA555ZEwYqBS+rZLEdGXVjGSWkn5K3l+s6BBhScAMgmlbTmA1x/3IFG9D61yrW0W0li7fGgN2SAuBw==
+"@vue-wordpress/nuxt@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@vue-wordpress/nuxt/-/nuxt-1.0.10.tgz#8cb6be1a77be0160397cc5d95b4ff46a2c91fcdc"
+  integrity sha512-+MhrmUjsZd038VsTjAPFtMQffmBiufqjqYR59A7s6exZghyaODCjT4UNSwiBpPuifR4T8zqMFXJek4528Xj+mg==
   dependencies:
     "@vue-wordpress/core" "^1.x"
 

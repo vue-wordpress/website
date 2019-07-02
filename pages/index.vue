@@ -3,6 +3,7 @@
     class="start wp-page"
   >
     <Sections
+      v-if="start"
       :data="start"
     />
   </div>
@@ -11,11 +12,11 @@
 <script>
 
 import Logo from '~/components/Logo.vue'
-import loadSections from '@vue-wordpress/core/mixins/loadSections'
+import wpData from '@vue-wordpress/core/mixins/wpData'
 import { FetchHookTypes } from '@vue-wordpress/core/types'
 
 export default {
-  mixins: [loadSections('start', FetchHookTypes.AsyncData)],
+  mixins: [wpData('start', FetchHookTypes.AsyncData)],
   components: {
     Logo
   }

@@ -55,7 +55,6 @@ export default {
           url: 'https://wp.vuewordpress.io/',
           lang: 'en',
           menus: [
-            'main-menu',
             'apple-header-main-menu',
             'apple-footer-main-menu',
             'apple-footer-help-menu',
