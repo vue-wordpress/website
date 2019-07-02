@@ -11,13 +11,13 @@
         <logo
           class="apple__header__logo"
           :height="'46px'"
-          :image="'/img/appleLogo.svg'"
+          :image="'/img/apple/appleLogo.svg'"
         />
       </router-link>
-      <base-menu
+      <!-- <base-menu
         class="apple__header__nav"
-        slug="apple-menu"
-      />
+        slug="apple-header-main-menu"
+      /> -->
       <ul
         class="apple__header__icons"
       >
@@ -26,7 +26,7 @@
             :to="'#'"
           >
             <img
-              src="/img/appleSearchIcon.svg"
+              src="/img/apple/icons/navigation/appleSearchIcon.svg"
               alt="Search"
               width="16px"
               height="44px"
@@ -38,7 +38,7 @@
             :to="'#'"
           >
             <img
-              src="/img/appleBagIcon.svg"
+              src="/img/apple/icons/navigation/appleBagIcon.svg"
               alt="Search"
               width="14px"
               height="44px"
@@ -66,16 +66,15 @@ export default {
 
 <style lang="scss">
 
-@import 'fantastic-css';
+@import 'sxcss';
 
 .apple__header {
   @include background-color(rgba(45,45,45,0.98));
-  @include position(fixed !important);
   @include width(100% !important);
   z-index: 999;
 
   &__inner {
-    @include boxed($boxed-max-width: 980px);
+    @include boxed($max-width: 980px);
     @include flex;
     @include justify-content(space-between);
     @include align-items(center);

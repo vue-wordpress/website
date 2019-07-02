@@ -29,7 +29,7 @@ export default {
   ** Global CSS
   */
   css: [
-    'fantastic-css',
+    'sxcss',
     'fantastic-gutenberg',
     '@/styles/themes/apple/main.scss'
   ],

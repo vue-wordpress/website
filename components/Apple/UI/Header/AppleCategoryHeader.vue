@@ -2,41 +2,24 @@
   <div
     class="apple__category__header"
   >
-    <ul
+    <!-- <base-menu
       class="apple__category__header__menu"
-    >
-      <li
-        class="apple__category__header__menu__item"
-        v-for="item in menu"
-        :key="item.label"
-      >
-        <router-link
-          :to="item.link"
-          class="apple__category__header__menu__item__inner"
-        >
-          <img
-            :src="item.icon"
-            :alt="item.label"
-            height="54px"
-          >
-          {{ item.label }}
-          <span
-            class="new-product"
-            v-if="item.new"
-          >
-            New
-          </span>
-        </router-link>
-      </li>
-    </ul>
+      :slug="slug"
+    /> -->
   </div>
 </template>
 
 <script>
+
+import BaseMenu from '@vue-wordpress/core/components/Base/BaseMenu';
+
 export default {
+  components: {
+    BaseMenu
+  },
   props: {
-    menu: {
-      type: Array,
+    slug: {
+      type: String,
       required: true,
       default: null
     }
@@ -46,26 +29,36 @@ export default {
 
 <style lang="scss">
 
-@import 'fantastic-css';
+@import 'sxcss';
 
 @mixin apple__category__header {
 
   .apple__category__header{
+    @include padding-y(1rem);
+    @include background($color: rgba(242,242,242,0.7) !important);
 
     &__menu {
       @include flex;
       @include align-items(center);
       @include justify-content(center);
+      // @include padding($padding-bottom: 1rem);
       
-      &__item {
-        @include margin-right(calc( 1.05 * #{map-get($gap, ms)} ));
+      > li{
+        @include margin-right(calc( 1.1 * #{map-get($gap, ms)}));
+        line-height: 1.96;
+        &:last-child {
+          margin-right: 0 !important;
+        }
+
+        &::before {
+          height: 54px;
+          @include flex($justify-content: center);
+        }
         
-        &__inner {
-          @include flex;
-          @include align-items(center);
-          @include justify-content(center);
+        a {
+          @include flex($direction: column, $justify-content: center, $align-items: center);
           @include font-size(11px);
-          @include flex-direction(column);
+          @include color(black);
           &:last-of-type {
             margin-right: 0;
           }
@@ -75,14 +68,17 @@ export default {
             text-decoration: none !important;
           }
           
-          .new-product {
-            font-size: 9px;
-            line-height: 1.22226;
-            font-weight: 400;
-            letter-spacing: -.006em;
-            color: #ef5602;
-            @include position(absolute);
-            transform: translateY(2.54rem);
+          &.new-product {
+            &::after {
+              content: 'New';
+              font-size: 9px;
+              line-height: 1.22226;
+              font-weight: 400;
+              letter-spacing: -.006em;
+              color: #ef5602;
+              @include position(absolute);
+              transform: translateY(2.5rem);
+            }
           }
         }
       }

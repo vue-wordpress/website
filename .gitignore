@@ -83,6 +83,6 @@ dist
 # Service worker
 sw.*
 
-# Ignore fantastic-css git
+# Ignore sxcss git
 
-styles/fantastic-css/.git/
+styles/sxcss/.git/
