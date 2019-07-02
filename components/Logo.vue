@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss">
 
-@import 'fantastic-css';
+@import 'sxcss';
 
 .logo {
   @include flex;

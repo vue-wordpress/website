@@ -13,10 +13,10 @@
           :height="'30px'"
         />
       </router-link>
-      <base-menu
+      <!-- <base-menu
         class="basic-header__nav"
         slug="main-menu"
-      />
+      /> -->
     </div>
   </header>
 </template>
@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss">
 
-@import 'fantastic-css';
+@import 'sxcss';
 
 .basic-header {
   @include background-color(map-get($color, extra-light-gray));
@@ -75,8 +75,8 @@ export default {
         @include height(100);
         @include flex;
         @include place-items(center);
-        @include font-weight(map-get($font-weight, semibold));
-        @include font-size(map-get($font-size, sm));
+        @include font-weight(600);
+        @include font-size(map-deep-get($font, size, sm));
       }
 
       > ul {

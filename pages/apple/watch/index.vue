@@ -98,7 +98,7 @@ export default {
 
 <style lang="scss">
 
-@import 'fantastic-css/main.scss';
+@import 'sxcss';
 @import '~/styles/themes/apple/main.scss';
 
 </style>

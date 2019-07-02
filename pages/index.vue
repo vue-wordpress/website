@@ -1,10 +1,9 @@
 <template>
   <div
-    class="home wp-page"
+    class="start wp-page"
   >
     <Sections
-      v-if="wpData"
-      :data="wpData"
+      :data="start"
     />
   </div>
 </template>
@@ -25,10 +24,10 @@ export default {
 
 <style lang="scss">
 
-@import 'fantastic-css/main.scss';
+@import 'sxcss';
 @import '~/styles/themes/apple/main.scss';
 
-.home {
+.start {
   .column {
     > div {
       @include width(100%);

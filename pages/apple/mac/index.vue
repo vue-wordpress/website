@@ -1,13 +1,13 @@
 <template>
   <div
+    id="mac-page"
     class="wp-page apple__category"
   >
     <apple-category-header
-      :menu="macMenu"
+      :slug="'apple-mac-menu'"
     />
     <Sections
-      v-if="wpData"
-      :data="wpData"
+      :data="mac"
     />
   </div>
 </template>
@@ -21,84 +21,84 @@ import loadSections from '@vue-wordpress/core/mixins/loadSections'
 import { FetchHookTypes } from '@vue-wordpress/core/types'
 
 export default {
-  layout: 'apple',
   mixins: [loadSections('mac', FetchHookTypes.AsyncData)],
+  layout: 'apple',
+  name: 'AppleMac',
   components: {
     Logo,
     AppleCategoryHeader
-  },
-  data () {
-    return {
-      macMenu: [
-        {
-          label: 'MacBook',
-          icon: '/img/apple/mac/appleMacBook.svg',
-          link: '/apple/mac/macbook',
-          new: false
-        },
-        {
-          label: 'MacBookAir',
-          icon: '/img/apple/mac/appleMacBookAir.svg',
-          link: '/apple/mac/macbook-air',
-          new: false
-        },
-        {
-          label: 'MacBookPro',
-          icon: '/img/apple/mac/appleMacBookPro.svg',
-          link: '/apple/mac/macbook-pro',
-          new: true
-        },
-        {
-          label: 'iMac',
-          icon: '/img/apple/mac/appleiMac.svg',
-          link: '/apple/mac/imac',
-          new: true
-        },
-        {
-          label: 'iMacPro',
-          icon: '/img/apple/mac/appleiMacPro.svg',
-          link: '/apple/mac/imac-pro',
-          new: false
-        },
-        {
-          label: 'MacPro',
-          icon: '/img/apple/mac/appleMacPro.svg',
-          link: '/apple/mac/mac-pro',
-          new: false
-        },
-        {
-          label: 'MacMini',
-          icon: '/img/apple/mac/appleMacMini.svg',
-          link: '/apple/mac/mac-mini',
-          new: false
-        },
-        {
-          label: 'Accessories',
-          icon: '/img/apple/mac/appleMacAccessories.svg',
-          link: '/apple/mac/accessories',
-          new: false
-        },
-        {
-          label: 'Mojave',
-          icon: '/img/apple/mac/appleMacOSX.svg',
-          link: '/apple/mac/mac-os',
-          new: false
-        },
-        {
-          label: 'Compare',
-          icon: '/img/apple/mac/appleMacCompare.svg',
-          link: '/apple/mac/compare',
-          new: false
-       }
-      ]
-    }
   }
 }
 </script>
 
 <style lang="scss">
 
-@import 'fantastic-css/main.scss';
+@import 'sxcss';
 @import '~/styles/themes/apple/main.scss';
 
+#mac-page {
+  .apple__category__header{
+
+    &__menu {
+      
+      > li{
+        &:nth-child(1) {
+          &::before {
+            content: url('/img/apple/icons/products/appleMacBook_icon.svg');
+          }
+        }
+        &:nth-child(2) {
+          &::before {
+            content: url('/img/apple/icons/products/appleMacBookAir_icon.svg');
+          }
+        }
+        &:nth-child(3) {
+          &::before {
+            content: url('/img/apple/icons/products/appleMacBookPro_icon.svg');
+          }
+        }
+        &:nth-child(4) {
+          &::before {
+            content: url('/img/apple/icons/products/appleiMac_icon.svg');
+          }
+        }
+        &:nth-child(5) {
+          &::before {
+            content: url('/img/apple/icons/products/appleiMacPro_icon.svg');
+          }
+        }
+        &:nth-child(6) {
+          &::before {
+            content: url('/img/apple/icons/products/appleMacPro_icon.svg');
+          }
+        }
+        &:nth-child(7) {
+          &::before {
+            content: url('/img/apple/icons/products/appleMacMini_icon.svg');
+          }
+        }
+        &:nth-child(8) {
+          &::before {
+            content: url('/img/apple/icons/products/appleMacCompare_icon.svg');
+          }
+        }
+        &:nth-child(9) {
+          &::before {
+            content: url('/img/apple/icons/products/appleProDisplayXDR_icon.svg');
+          }
+        }
+        &:nth-child(10) {
+          &::before {
+            content: url('/img/apple/icons/products/appleMacAccessories_icon.svg');
+          }
+        }
+        &:nth-child(11) {
+          &::before {
+            content: url('/img/apple/icons/products/appleMacOSX_icon.svg');
+          }
+        }
+      }
+    }
+  }
+}
 </style>

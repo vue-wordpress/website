@@ -29,7 +29,7 @@ export default {
   ** Global CSS
   */
   css: [
-    'fantastic-css',
+    'sxcss',
     'fantastic-gutenberg',
     '@/styles/themes/apple/main.scss'
   ],
@@ -56,11 +56,19 @@ export default {
           lang: 'en',
           menus: [
             'main-menu',
-            'apple-menu'
+            'apple-header-main-menu',
+            'apple-footer-main-menu',
+            'apple-footer-help-menu',
+            'apple-mac-menu',
+            'apple-ipad-menu',
+            'apple-iphone-menu',
+            'apple-watch-menu',
+            'apple-tv-menu',
+            'apple-music-menu'
           ],
         },
-        router: 'manual',
-        store: 'manual'
+        router: true,
+        store: true
       }
     ],
     '@nuxtjs/pwa'

@@ -2,18 +2,21 @@
   <div
     class="apple"
   >
-    <apple-main-header />
+    <!-- <apple-main-header /> -->
     <nuxt />
+    <!-- <apple-main-footer /> -->
   </div>
 </template>
 
 <script>
 
 import AppleMainHeader from '~/components/Apple/UI/Header/AppleMainHeader'
+import AppleMainFooter from '~/components/Apple/UI/Footer/AppleMainFooter'
 
 export default {
   components: {
-    AppleMainHeader
+    AppleMainHeader,
+    AppleMainFooter
   }
 }
 
@@ -21,7 +24,7 @@ export default {
 
 <style lang="scss">
 
-@import 'fantastic-css';
+@import 'sxcss';
 
 .apple {
 
@@ -30,7 +33,7 @@ export default {
   }
 
   .wp-page {
-    @include padding-top(2.75rem);
+    // @include padding-top(2.75rem);
 
     p {
       @include line-height(1.33349);
