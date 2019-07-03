@@ -55,6 +55,7 @@ export default {
           url: 'https://wp.vuewordpress.io/',
           lang: 'en',
           menus: [
+            'main-menu',
             'apple-header-main-menu',
             'apple-footer-main-menu',
             'apple-footer-help-menu',
@@ -76,7 +77,7 @@ export default {
   workbox: {
     runtimeCaching: [
       {
-        urlPattern: new RegExp('^https://wp\.vuewordpress\.io/'),
+        urlPattern: new RegExp('^https://daren\.vuewordpress\.io/'),
         handler: 'networkFirst',
         options: {
           networkTimeoutSeconds: 5,

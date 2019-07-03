@@ -16,7 +16,7 @@
       </router-link>
       <base-menu
         class="apple__header__nav"
-        slug="apple-menu"
+        slug="apple-header-main-menu"
       />
       <ul
         class="apple__header__icons"
