@@ -12,3 +12,9 @@ h1 {
 h2 {
   @extend .h2 !optional;
 }
+
+.font-weight {
+  &--semibold {
+    @include font-weight(map-deep-get($font, weight, semibold)); 
+  }
+}

@@ -30,7 +30,7 @@ export default {
   */
   css: [
     'sxcss',
-    'fantastic-gutenberg',
+    // '@sxcss/gutenberg',
     '@/styles/themes/apple/main.scss'
   ],
 
@@ -51,21 +51,19 @@ export default {
     ],
     [
       '@vue-wordpress/nuxt', {
-        config: {
-          url: 'https://wp.vuewordpress.io/',
-          lang: 'en',
-          menus: [
-            'apple-header-main-menu',
-            'apple-footer-main-menu',
-            'apple-footer-help-menu',
-            'apple-mac-menu',
-            'apple-ipad-menu',
-            'apple-iphone-menu',
-            'apple-watch-menu',
-            'apple-tv-menu',
-            'apple-music-menu'
-          ],
-        },
+        url: 'https://wp.vuewordpress.io/',
+        lang: 'en',
+        menus: [
+          'apple-header-main-menu',
+          'apple-footer-main-menu',
+          'apple-footer-help-menu',
+          'apple-mac-menu',
+          'apple-ipad-menu',
+          'apple-iphone-menu',
+          'apple-watch-menu',
+          'apple-tv-menu',
+          'apple-music-menu'
+        ],
         router: true,
         store: true
       }

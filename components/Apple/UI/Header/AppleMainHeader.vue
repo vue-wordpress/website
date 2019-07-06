@@ -14,10 +14,10 @@
           :image="'/img/apple/appleLogo.svg'"
         />
       </router-link>
-      <!-- <base-menu
+      <base-menu
         class="apple__header__nav"
         slug="apple-header-main-menu"
-      /> -->
+      />
       <ul
         class="apple__header__icons"
       >
@@ -94,9 +94,9 @@ export default {
       @include place-content(center);
       @include flex-direction(column);
       @include align-items(center);
-      @include margin-right(calc( #{map-get($gap, ml)} * 1.05 ));
+      @include margin-right(calc( #{map-deep-get($scale, proportion, ml)} * 1.05 ));
       @include hover($hover-opacity: map-get($opacity, md));
-      @include transition(all map-get($transition-time, xs) ease-out);
+      @include transition(all map-deep-get($transition, duration, xs) ease-out);
       &:last-of-type {
         margin-right: 0;
       }
@@ -124,9 +124,9 @@ export default {
         display: none;
         @include position(absolute);
         transform: translateY(4rem);
-        @include min-width(map-get($width, xxs));
+        @include min-width(map-deep-get($scale, proportion, xxs));
         @include justify-content(center);
-        @include padding(map-get($gap, xs));
+        @include padding(map-deep-get($scale, proportion, xs));
       }
 
     }

@@ -63,7 +63,7 @@ export default {
       @include place-content(center);
       @include flex-direction(column);
       @include align-items(center);
-      @include margin-right(map-get($gap, sm));
+      @include margin-right(map-deep-get($scale, proportion, sm));
       &:hover {
 
         > ul {
@@ -83,9 +83,9 @@ export default {
         display: none;
         @include position(absolute);
         transform: translateY(4rem);
-        @include min-width(map-get($width, xxs));
+        @include min-width(map-deep-get($scale, proportion, xxs));
         @include justify-content(center);
-        @include padding-y(map-get($gap, xs));
+        @include padding-y(map-deep-get($scale, proportion, xs));
       }
     }
   }

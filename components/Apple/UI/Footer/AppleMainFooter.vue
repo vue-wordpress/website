@@ -5,10 +5,10 @@
     <div
       class="main-footer__content"
     >
-      <!-- <base-menu
+      <base-menu
         class="main-footer__menu"
         slug="apple-footer-main-menu"
-      /> -->
+      />
       <div
         class="main-footer__disclaimer"
       >
@@ -24,10 +24,10 @@
         >
           Copyright © 2019 Apple Inc. All rights reserved.
         </p>
-        <!-- <base-menu
+        <base-menu
           class="main-footer__bottom-credits__help-menu"
           slug="apple-help-menu"
-        /> -->
+        />
         <a
           class="main-footer__bottom-credits__country-selection"
           href="#"

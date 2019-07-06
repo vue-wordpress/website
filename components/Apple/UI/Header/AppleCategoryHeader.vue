@@ -2,10 +2,10 @@
   <div
     class="apple__category__header"
   >
-    <!-- <base-menu
+    <base-menu
       class="apple__category__header__menu"
       :slug="slug"
-    /> -->
+    />
   </div>
 </template>
 
@@ -44,7 +44,7 @@ export default {
       // @include padding($padding-bottom: 1rem);
       
       > li{
-        @include margin-right(calc( 1.1 * #{map-get($gap, ms)}));
+        @include margin-right(calc( 1.1 * #{map-deep-get($scale, proportion, ms)}));
         line-height: 1.96;
         &:last-child {
           margin-right: 0 !important;

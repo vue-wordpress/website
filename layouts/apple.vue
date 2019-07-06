@@ -2,9 +2,9 @@
   <div
     class="apple"
   >
-    <!-- <apple-main-header /> -->
+    <apple-main-header />
     <nuxt />
-    <!-- <apple-main-footer /> -->
+    <apple-main-footer />
   </div>
 </template>
 
@@ -55,7 +55,7 @@ export default {
     }
   
     .apple-product-menu {
-      @include height(calc( #{map-get($size, xxs)} * .8 ));
+      @include height(calc( #{map-deep-get($scale, proportion, xxs)} * .8 ));
       @include background-color(rgba(242,242,242,0.7));
     }
   

@@ -1,5 +1,5 @@
 {
-  "name": "vue-wordpress-website",
+  "name": "@vue-wordpress/website",
   "version": "1.0.0",
   "description": "Nuxt.js app for Vue Wordpress website",
   "author": "Aleksander Grygier",
@@ -13,10 +13,10 @@
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.2.0",
     "@nuxtjs/pwa": "^3.0.0-beta.16",
-    "@vue-wordpress/nuxt": "^1.0.10",
+    "@sxcss/gutenberg": "^1.0.6",
+    "@vue-wordpress/nuxt": "^1.0.12",
     "cross-env": "^5.2.0",
-    "sxcss": "^1.0.37",
-    "fantastic-gutenberg": "^1.0.6",
+    "sxcss": "^1.0.40",
     "node-sass": "^4.12.0",
     "nuxt": "^2.4.0",
     "sass-loader": "^7.1.0"
