@@ -29,9 +29,6 @@ export default {
   ** Global CSS
   */
   css: [
-    'sxcss',
-    // '@sxcss/gutenberg',
-    '@/styles/themes/apple/main.scss'
   ],
 
   /*
@@ -51,18 +48,11 @@ export default {
     ],
     [
       '@vue-wordpress/nuxt', {
-        url: 'https://wp.vuewordpress.io/',
+        url: 'https://wp.daren.vuewordpress.io/',
         lang: 'en',
         menus: [
-          'apple-header-main-menu',
-          'apple-footer-main-menu',
-          'apple-footer-help-menu',
-          'apple-mac-menu',
-          'apple-ipad-menu',
-          'apple-iphone-menu',
-          'apple-watch-menu',
-          'apple-tv-menu',
-          'apple-music-menu'
+          'header-menu',
+          'footer-menu'
         ],
         router: true,
         store: true

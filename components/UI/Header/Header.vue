@@ -1,22 +1,14 @@
 <template>
   <header
-    class="basic-header"
+    class="main-header"
   >
     <div
-      class="basic-header__inner"
+      class="main-header__inner"
     >
-      <router-link
-        :to="'/'"
-      >
-        <logo
-          class="basic-header__logo"
-          :height="'30px'"
-        />
-      </router-link>
-      <!-- <base-menu
-        class="basic-header__nav"
-        slug="main-menu"
-      /> -->
+      <base-menu
+        class="main-header__nav"
+        slug="header-menu"
+      />
     </div>
   </header>
 </template>
