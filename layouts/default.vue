@@ -1,17 +1,17 @@
 <template>
   <div>
-    <!-- <default-header /> -->
+    <main-header />
     <nuxt />
   </div>
 </template>
 
 <script>
 
-import DefaultHeader from '~/components/UI/Header/DefaultHeader'
+import MainHeader from '~/components/UI/Header/Header'
 
 export default {
   components: {
-    DefaultHeader
+    MainHeader
   }
 }
 

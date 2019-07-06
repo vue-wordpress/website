@@ -3,8 +3,8 @@
     class="start wp-page"
   >
     <Sections
-      v-if="start"
-      :data="start"
+      v-if="home"
+      :data="home"
     />
   </div>
 </template>
@@ -16,7 +16,7 @@ import wpData from '@vue-wordpress/core/mixins/wpData'
 import { FetchHookTypes } from '@vue-wordpress/core/types'
 
 export default {
-  mixins: [wpData('start', FetchHookTypes.AsyncData)],
+  mixins: [wpData('home', FetchHookTypes.AsyncData)],
   components: {
     Logo
   }
@@ -25,15 +25,6 @@ export default {
 
 <style lang="scss">
 
-@import 'sxcss';
-@import '~/styles/themes/apple/main.scss';
-
-.start {
-  .column {
-    > div {
-      @include width(100%);
-    }
-  }
-}
+// @import 'sxcss';
 
 </style>
