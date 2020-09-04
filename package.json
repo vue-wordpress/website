@@ -17,7 +17,7 @@
     "@sxcss/gutenberg": "^1.0.6",
     "@vue-wordpress/nuxt": "^1.0.12",
     "cross-env": "^5.2.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "nuxt": "^2.4.0",
     "pm2": "^3.5.1",
     "sass-loader": "^7.1.0",
